@@ -1,10 +1,14 @@
 @use "../mixins/layout";
+@use "../functions/common";
 
 .block {
   position: relative;
+  margin-top: 150px;
 }
 
 .block__content {
   position: relative;
-  max-width: 1280px;
+  max-width: common.toRem(1320);
+  padding: 0 20px;
+  margin: 0 auto;
 }

@@ -4,21 +4,21 @@
 @use "../../../styles/mixins/layout";
 @use "../../../styles/mixins/common" as mixins;
 
-header {
-  height: 50px;
-  padding: 10px 20px;
+.header {
+  margin-top: 0;
+  min-height: 50px;
+  padding: 10px 0;
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 0px 0px 5px 5px;
 
   .block__content {
     display: flex;
     align-items: center;
-    margin: 0 auto;
   }
-
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
-  border-radius: 0px 0px 5px 5px;
 }
 
 .header_logo {
@@ -43,29 +43,9 @@ header {
   @include mixins.blueTextHover;
 }
 
-.try-free-btn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  background: colors.$primary;
-  border-radius: 10px;
-  font-weight: 700;
-  font-size: font.toRem(25);
-  text-align: center;
-  text-transform: uppercase;
-  color: white;
-
-  @include mixins.blueTextHover;
-
-  &:hover {
-    background: white;
-  }
-}
-
 .try-free-btn_header {
-  padding: 5px 10px;
+  margin-top: 0;
+  padding: common.toRem(5) common.toRem(10);
   font-size: font.toRem(16);
   border-radius: 5px;
   margin-right: common.toRem(110);

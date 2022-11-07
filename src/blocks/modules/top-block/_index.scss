@@ -1,0 +1,47 @@
+@use "../../../styles/functions/font";
+@use "../../../styles/functions/common";
+@use "../../../styles/variables/colors";
+@use "../../../styles/mixins/layout";
+@use "../../../styles/mixins/common" as mixins;
+
+.top-block {
+  margin-top: common.toRem(130);
+
+  .block__content {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.top-block__description {
+  width: common.toPercent(610);
+}
+
+.top-block__title {
+  font-weight: 700;
+  font-size: font.toRem(80);
+  color: colors.$primary;
+}
+
+.top-block__subtitle {
+  margin-top: common.toRem(30);
+  font-weight: 500;
+  font-size: font.toRem(24);
+  color: colors.$text;
+}
+
+.top-block__quote {
+  margin-top: common.toRem(30);
+}
+
+.top-block__img {
+  width: common.toPercent(609);
+  position: relative;
+}
+
+.top-block__img-wrapper {
+  position: absolute;
+  width: common.toRem(177);
+  right: common.toRem(35);
+  bottom: common.toRem(-20);
+}

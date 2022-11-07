@@ -1,0 +1,14 @@
+@use "../functions/font";
+@use "../variables/colors";
+
+@mixin blueTextHover {
+  &:hover {
+    color: colors.$primary;
+  }
+}
+
+@mixin scaleHover {
+  &:hover {
+    transform: scale(1.1);
+  }
+}

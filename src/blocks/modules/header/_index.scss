@@ -1,3 +1,104 @@
+@use "../../../styles/functions/font";
+@use "../../../styles/functions/common";
+@use "../../../styles/variables/colors";
 @use "../../../styles/mixins/layout";
+@use "../../../styles/mixins/common" as mixins;
 
-@import "../../components/header-top-row";
+header {
+  height: 50px;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  .block__content {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 0px 0px 5px 5px;
+}
+
+.header_logo {
+  margin-right: common.toRem(110);
+}
+
+.header__nav-menu {
+  font-weight: 600;
+  font-size: font.toRem(16);
+  color: colors.$alt-primary-btn;
+  margin-right: common.toRem(110);
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.nav-menu__item {
+  margin-right: common.toRem(40);
+  @include mixins.blueTextHover;
+}
+
+.try-free-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: colors.$primary;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: font.toRem(25);
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+
+  @include mixins.blueTextHover;
+
+  &:hover {
+    background: white;
+  }
+}
+
+.try-free-btn_header {
+  padding: 5px 10px;
+  font-size: font.toRem(16);
+  border-radius: 5px;
+  margin-right: common.toRem(110);
+  font-weight: 600;
+}
+
+.last-header-btn {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+
+  button {
+    font-weight: 600;
+    font-size: font.toRem(16);
+    color: colors.$alt-primary-btn;
+    margin-right: common.toRem(40);
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    @include mixins.blueTextHover;
+  }
+}
+
+.header__contacts {
+  a {
+    filter: drop-shadow(0px 4px 10px rgba(118, 118, 118, 0.2));
+
+    &:hover {
+      path {
+        fill: colors.$primary;
+      }
+    }
+  }
+}

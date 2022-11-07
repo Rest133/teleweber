@@ -1,9 +1,10 @@
 @use "../mixins/layout";
 
-.block{
-
+.block {
+  position: relative;
 }
 
-.block__content{
-
+.block__content {
+  position: relative;
+  max-width: 1280px;
 }

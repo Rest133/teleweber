@@ -1,0 +1,16 @@
+@use "sass:math";
+
+$base: 18;
+$block_base: 1280;
+
+@function toEm($value) {
+  @return math.div($value, $base) + em;
+}
+
+@function toRem($value) {
+  @return math.div($value,$base) + rem;
+}
+
+@function toPercent($value) {
+  @return math.div($value,$block_base) * 100%;
+}

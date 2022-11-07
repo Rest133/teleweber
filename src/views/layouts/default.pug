@@ -1,0 +1,14 @@
+include ../utils/mixins
+
+block variables
+
+doctype html
+html(lang="ru")
+    head
+        include ../includes/head
+    body
+        .wrapper
+            include ../../blocks/modules/header/index
+            block content
+            include ../../blocks/modules/footer/index
+            include ../includes/scripts

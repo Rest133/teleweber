@@ -109,6 +109,7 @@ button {
 
   a {
     margin-right: common.toRem(40);
+    color: inherit;
 
     &:last-of-type {
       margin-right: 0;

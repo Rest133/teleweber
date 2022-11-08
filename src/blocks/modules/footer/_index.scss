@@ -1,3 +1,39 @@
 @use "../../../styles/functions/font";
+@use "../../../styles/functions/common";
 @use "../../../styles/variables/colors";
 @use "../../../styles/mixins/layout";
+@use "../../../styles/mixins/common" as mixins;
+
+.footer {
+  .block__content {
+    max-width: common.toRem(1340);
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 50px 30px;
+    background: colors.$title-dark;
+    backdrop-filter: blur(2.5px);
+    border-radius: 5px 5px 0px 0px;
+  }
+}
+
+.footer__nav-menu {
+  color: white;
+}
+
+.footer__contacts {
+  path {
+    fill: white;
+  }
+
+  a {
+    color: white;
+
+    &:hover {
+      color: colors.$primary;
+
+      path {
+        fill: colors.$primary;
+      }
+    }
+  }
+}

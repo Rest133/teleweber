@@ -6,9 +6,16 @@
 
 
 .tariffs-block {
-  .block__content{
+  .block__content {
     max-width: common.toRem(1064);
     margin: 0 auto;
+  }
+  @include layout.before-md {
+    .block__content {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+    }
   }
 }
 
@@ -21,6 +28,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include layout.before-md {
+    margin-top: common.toRem(25);
+  }
 }
 
 .tariffs-block__list-item {
@@ -49,13 +59,41 @@
     width: common.toRem(320);
     height: common.toRem(320);
     padding: common.toRem(50);
-    background: linear-gradient(133.42deg, #0085FF 16.53%, rgba(0, 133, 255, 0.49) 46.5%, #0085FF 80.61%);
+    background: linear-gradient(134.36deg, #1D92FF 21.95%, #7BC0FF 46.21%, #1D92FF 62.69%);
     border-radius: 11px;
+  }
+
+  @include layout.before-md {
+    padding: common.toRem(20);
+    width: common.toRem(144);
+    height: common.toRem(152);
+    white-space: unset;
+    margin-right: -10px;
+    p:first-of-type {
+      font-size: font.toRem(14);
+      text-align: center;
+    }
+    p:last-of-type {
+      font-size: font.toRem(23);
+    }
+
+    &.active {
+      width: common.toRem(144);
+      height: common.toRem(191);
+      border: 1px solid #7AC0FF;
+      padding: common.toRem(25);
+      margin-right: 0;
+      z-index: 5;
+    }
   }
 }
 
 .tariffs-block__list-item_dark {
   background: #0071DA;
+  @include layout.before-md {
+    margin-right: 0;
+    margin-left: -10px;
+  }
 }
 
 .tariffs-block__list-item-btn {
@@ -63,4 +101,9 @@
   width: common.toRem(117);
   height: common.toRem(62);
   @include mixins.scaleHover;
+  @include layout.before-md {
+    width: common.toRem(84);
+    height: common.toRem(38);
+    font-size: font.toRem(15);
+  }
 }

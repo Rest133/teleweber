@@ -27,6 +27,11 @@
     right: 0;
     top: 0;
   }
+
+  @include layout.before-sm {
+    flex-flow: column;
+    bottom: 0;
+  }
 }
 
 .cookie__description {
@@ -51,4 +56,7 @@
   background: colors.$primary;
   position: relative;
   @include mixins.scaleHover;
+  @include layout.before-sm {
+    margin-top: common.toRem(10);
+  }
 }

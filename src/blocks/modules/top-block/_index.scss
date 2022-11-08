@@ -31,6 +31,9 @@
   font-weight: 700;
   font-size: font.toRem(80);
   color: colors.$primary;
+  @include layout.before-sm {
+    font-size: font.toRem(50);
+  }
 }
 
 .top-block__subtitle {
@@ -38,10 +41,18 @@
   font-weight: 500;
   font-size: font.toRem(24);
   color: colors.$text;
+
+  @include layout.before-sm {
+    font-size: font.toRem(14);
+  }
 }
 
 .top-block__quote {
   margin-top: common.toRem(30);
+  @include layout.before-sm {
+    font-size: font.toRem(12);
+    padding: common.toRem(12);
+  }
 }
 
 .top-block__img {
@@ -61,5 +72,13 @@
   @include layout.before-md {
     width: common.toRem(99);
     right: common.toRem(5);
+  }
+}
+
+.top-block__try-free-btn{
+  @include layout.before-sm {
+    margin-top: common.toRem(20);
+    font-size: font.toRem(14);
+    padding: common.toRem(15);
   }
 }

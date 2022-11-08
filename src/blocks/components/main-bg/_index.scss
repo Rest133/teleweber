@@ -1,0 +1,13 @@
+@use "../../../styles/functions/font";
+@use "../../../styles/functions/common";
+@use "../../../styles/variables/colors";
+@use "../../../styles/mixins/layout";
+@use "../../../styles/mixins/common" as mixins;
+
+.main-bg-wrapper {
+  position: absolute;
+  top: 100px;
+  left: calc((100% - 2618px) / 2);
+  width: common.toRem(2618);
+  height: auto;
+}

@@ -73,9 +73,13 @@
     width: common.toRem(99);
     right: common.toRem(5);
   }
+  @include layout.before-sm {
+    right: common.toRem(10);
+    bottom: common.toRem(20);
+  }
 }
 
-.top-block__try-free-btn{
+.top-block__try-free-btn {
   @include layout.before-sm {
     margin-top: common.toRem(20);
     font-size: font.toRem(14);

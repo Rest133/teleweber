@@ -40,4 +40,7 @@
   }
 
   @include mixins.scaleHover;
+  @include layout.before-sm {
+    font-size: font.toRem(14);
+  }
 }

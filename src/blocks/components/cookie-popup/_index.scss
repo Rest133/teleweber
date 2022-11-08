@@ -11,7 +11,7 @@
   bottom: 50px;
   transform: translateX(-50%);
   background: white;
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
   padding: common.toRem(12) common.toRem(40);
@@ -21,6 +21,10 @@
   overflow: hidden;
   max-width: common.toRem(983);
   width: 100%;
+
+  &.active{
+    display: flex;
+  }
 
   svg{
     position: absolute;

@@ -26,11 +26,23 @@
     bottom: 0;
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0) 300%);
   }
+
+  &.active {
+    &:after {
+      content: none;
+    }
+
+    .faq__list {
+      max-height: unset;
+      overflow: visible;
+    }
+  }
 }
 
 .faq__list {
   max-height: common.toRem(218);
   overflow: hidden;
+
 }
 
 .faq__list-item {

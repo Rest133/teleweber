@@ -15,4 +15,8 @@
   font-size: font.toRem(18);
   text-align: center;
   color: colors.$alt-primary-btn;
+  @include layout.before-sm {
+    margin-top: common.toRem(22);
+    font-size: font.toRem(12);
+  }
 }

@@ -8,9 +8,10 @@
   display: flex;
   justify-content: space-between;
   margin-top: common.toRem(40);
-  @include layout.before-md {
-    margin-top: common.toRem(30);
+  @include layout.before-sm {
+    margin: common.toRem(30) auto 0;
     flex-flow: column;
+    max-width: common.toRem(340);
   }
 }
 

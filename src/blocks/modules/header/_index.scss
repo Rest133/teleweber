@@ -23,8 +23,15 @@
     align-items: center;
     row-gap: 110px;
   }
+
   @include layout.before-md {
     margin-top: 0;
+
+    &.active {
+      .header__nav-menu {
+        left: 0;
+      }
+    }
   }
 }
 
@@ -45,7 +52,19 @@
 
   @include layout.before-md {
     position: fixed;
-    top: -200%;
+    top: 55px;
+    left: 200vw;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    padding: common.toRem(25);
+    ul {
+      flex-flow: column;
+    }
+    .nav-menu__item {
+      margin-bottom: common.toRem(40);
+      display: block;
+    }
   }
 }
 

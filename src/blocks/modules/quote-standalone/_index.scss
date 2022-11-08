@@ -53,6 +53,8 @@
   @include layout.before-md {
     color: colors.$title-dark;
     text-align: center;
+  }
+  @include layout.before-sm {
     font-size: font.toRem(12);
   }
 }
@@ -68,7 +70,7 @@
     background: colors.$primary;
     color: white;
     @include mixins.blueTextHover;
-    &:hover{
+    &:hover {
       background: white;
     }
   }

@@ -8,12 +8,6 @@
 
 }
 
-.target-audience__title {
-  font-weight: 700;
-  font-size: font.toRem(24);
-  color: colors.$text;
-}
-
 .target-audience__solution-list {
   display: grid;
   flex-flow: wrap;
@@ -48,9 +42,7 @@
 }
 
 .solution-item__title {
-  font-weight: 700;
   font-size: font.toRem(22);
-  color: colors.$title-dark;
 }
 
 .solution-item__description {

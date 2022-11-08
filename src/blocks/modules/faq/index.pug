@@ -1,0 +1,12 @@
+section.block.faq
+    .block__content
+        p.standard-title.faq__title Часто задаваемые вопросы
+        .faq__list-wrapper
+            ul.faq__list
+                each num in [0,1,2,3,4,5,6]
+                    li.faq__list-item
+                        details
+                            summary Вопрос #{num + 1}
+                            p.faq__list-item-description Ответ #{num + 1}
+            button.faq__more-btn
+                img(src="./images/icons/sprite.svg#arrow")

@@ -1,0 +1,87 @@
+@use "../../../styles/functions/font";
+@use "../../../styles/functions/common";
+@use "../../../styles/variables/colors";
+@use "../../../styles/mixins/layout";
+@use "../../../styles/mixins/common" as mixins;
+
+.faq {
+
+}
+
+.faq__title {
+  text-align: center;
+}
+
+.faq__list-wrapper {
+  position: relative;
+  max-width: common.toRem(443);
+  margin: common.toRem(40) auto 0;
+
+  &:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 80px;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0) 300%);
+  }
+}
+
+.faq__list {
+  max-height: common.toRem(218);
+  overflow: hidden;
+}
+
+.faq__list-item {
+  padding: common.toRem(13) 0;
+  border-bottom: 1px solid colors.$alt-primary-light;
+
+  summary {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: font.toRem(18);
+    color: colors.$title-dark;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 13px;
+      height: 12px;
+      background: #000;
+      -webkit-mask: url(../images/icons/sprite.svg#arrow) center no-repeat;
+      -webkit-mask-size: contain;
+      margin-left: auto;
+    }
+
+    &::marker {
+      content: none;
+    }
+  }
+
+  details[open] summary:after {
+    transform: rotate(180deg);
+  }
+}
+
+.faq__list-item-description {
+  margin-top: common.toRem(13);
+  font-weight: 500;
+  font-size: font.toRem(14);
+  color: colors.$text;
+}
+
+.faq__more-btn {
+  display: block;
+  width: 15px;
+  height: 9px;
+  margin: common.toRem(35) auto 0;
+  position: relative;
+  z-index: 3;
+
+  &:hover img {
+    transform: translateY(10px);
+  }
+}

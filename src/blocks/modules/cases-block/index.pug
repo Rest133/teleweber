@@ -1,0 +1,40 @@
+-
+    const sliderData = [
+        {
+            imgWrapper: '',
+            imgSrc: './images/content/case1.png',
+            title: 'Название',
+            thesis: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+            result: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. '
+        },
+        {
+            imgWrapper: '',
+            imgSrc: './images/content/case2.png',
+            title: 'Название',
+            thesis: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+            result: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. '
+        },
+        {
+            imgWrapper: '',
+            imgSrc: './images/content/case1.png',
+            title: 'Название',
+            thesis: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+            result: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. '
+        },
+    ]
+
+section.block.cases-block
+    .block__content
+        p.standard-title.cases-block__title Кейсы
+        .cases-block__slider
+            each slide in sliderData
+                .cases-block__slide.cases-slide
+                    .cases-slide__img-wrapper
+                        img(src=`${slide.imgSrc}`)
+                    p.cases-slide__title #{slide.title}
+                    p.cases-slide__thesis
+                        span Тезис
+                        | #{slide.thesis}
+                    p.cases-slide__result
+                        span Результат
+                        | #{slide.result}

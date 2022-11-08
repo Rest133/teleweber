@@ -1,0 +1,55 @@
+-
+    const solutionsData = [
+        {
+            "imgSrc": "./images/icons/sprite.svg#solution1",
+            "title": "Представители товаров <br> и услуг разных сфер",
+            "description": "Находите клиентов,<br> заинтересованных в вашем предложении.<br> Отслеживайте, что про вас говорят."
+        },
+        {
+            "imgSrc": "./images/icons/sprite.svg#solution2",
+            "title": "Партнёрки",
+            "description": "Мониторьте свою репутацию в affiliate чатах.<br> Привлекайте новых вебмастеров и рекламодателей."
+        },
+        {
+            "imgSrc": "./images/icons/sprite.svg#solution3",
+            "title": "Медиабаинговые агентства<br> и арбитражные команды",
+            "description": "Ищите офферы от партнёрок<br> и прямых рекламодателей с высоким ROI."
+        },
+        {
+            "imgSrc": "./images/icons/sprite.svg#solution4",
+            "title": "Прямые рекламодатели",
+            "description": "Предлагайте офферы<br> напрямую медиабаинговым агентствам,<br> арбитражным командам и партнёркам."
+        },
+        {
+            "imgSrc": "./images/icons/sprite.svg#solution5",
+            "title": "Рекламные агентства",
+            "description": "Мониторьте репутацию клиентов<br> и ищите исполнителей<br> в профильных чатах."
+        },
+        {
+            "imgSrc": "./images/icons/sprite.svg#solution6",
+            "title": "Платежные и карточные сервисы",
+            "description": "Выходите на арбитражные команды<br> и медиабаинговые агентства<br> с предложением виртуальных карт<br> и платёжных предложений."
+        },
+        {
+            "imgSrc": "./images/icons/sprite.svg#solution7",
+            "title": "Антидетект-браузеры",
+            "description": "Находите новых клиентов<br> в affiliate сфере. "
+        },
+        {
+            "imgSrc": "./images/icons/sprite.svg#solution8",
+            "title": "HR-службы",
+            "description": "Рекрутируйте новых сотрудников<br> под ваши офферы."
+        },
+    ]
+section.block.target-audience
+    .block__content
+        p.target-audience__title Для кого решение?
+        ul.target-audience__solution-list
+            each solution in solutionsData
+                li.target-audience__solution-list-item.solution-item
+                    details(open, disabled)
+                        summary.solution-item__top-row
+                            .solution-item__img-wrapper
+                                img(src=`${solution.imgSrc}`)
+                            p.solution-item__title !{solution.title}
+                        p.solution-item__description !{solution.description}

@@ -1,0 +1,61 @@
+@use "../../../styles/functions/font";
+@use "../../../styles/functions/common";
+@use "../../../styles/variables/colors";
+@use "../../../styles/mixins/layout";
+@use "../../../styles/mixins/common" as mixins;
+
+.target-audience {
+
+}
+
+.target-audience__title {
+  font-weight: 700;
+  font-size: font.toRem(24);
+  color: colors.$text;
+}
+
+.target-audience__solution-list {
+  display: grid;
+  flex-flow: wrap;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-between;
+  margin-top: common.toRem(40);
+  gap: common.toRem(40);
+}
+
+.target-audience__solution-list-item {
+}
+
+.solution-item {
+  details[disabled] summary {
+    pointer-events: none;
+    user-select: none;
+  }
+
+  summary {
+    &::marker {
+      content: none;
+    }
+  }
+}
+
+.solution-item__top-row {
+
+}
+
+.solution-item__img-wrapper {
+  width: 50px;
+}
+
+.solution-item__title {
+  font-weight: 700;
+  font-size: font.toRem(22);
+  color: colors.$title-dark;
+}
+
+.solution-item__description {
+  margin-top: common.toRem(15);
+  font-weight: 500;
+  font-size: font.toRem(18);
+  color: colors.$text;
+}

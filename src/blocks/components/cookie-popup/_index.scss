@@ -49,4 +49,5 @@
   color: white;
   background: colors.$primary;
   position: relative;
+  @include mixins.scaleHover;
 }

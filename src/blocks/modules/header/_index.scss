@@ -19,19 +19,20 @@
 
   .block__content {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    row-gap: 110px;
   }
 }
 
 .header_logo {
-  margin-right: common.toRem(110);
+
 }
 
 .header__nav-menu {
   font-weight: 600;
   font-size: font.toRem(16);
   color: colors.$alt-primary-btn;
-  margin-right: common.toRem(110);
 
   ul {
     display: flex;
@@ -50,12 +51,11 @@
   padding: common.toRem(5) common.toRem(10);
   font-size: font.toRem(16);
   border-radius: 5px;
-  margin-right: common.toRem(110);
+
   font-weight: 600;
 }
 
 .last-header-btn {
-  margin-left: auto;
   display: flex;
   align-items: center;
 

@@ -14,7 +14,7 @@
 
 .cases-block__slider {
   margin: common.toRem(40) auto 0;
-  max-width: common.toRem(1220);
+  max-width: common.toRem(1200);
 }
 
 .slick-list {
@@ -26,20 +26,48 @@
   position: absolute;
   top: calc(50% + 35px);
   transform: translateY(-50%);
-  right: -9%;
   z-index: 10;
+  transform-origin: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(1.52px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  svg {
+    position: relative;
+    right: -2px;
+  }
 
   &:hover {
-    path[stroke='white'] {
-      transform: translateX(10%);
+    svg {
+      transform: translateX(30%);
     }
+  }
+  @include layout.lg {
+    right: -10%;
+  }
+  @include layout.xl {
+    right: -4vw;
+  }
+  @media screen and (max-width: 1300px) {
+    right: -2.5%;
   }
 }
 
 .cases-block__slider-arrow_prev {
   right: unset;
-  left: -9%;
   transform: translateY(-50%) rotate(180deg);
+  @include layout.xl {
+    left: -4vw;
+  }
+  @media screen and (max-width: 1300px) {
+    left: -2.5%;
+  }
 }
 
 
@@ -47,7 +75,7 @@
   max-width: common.toRem(580);
   position: relative;
   border-radius: 15px;
-  margin-right: common.toRem(50);
+  margin-right: common.toRem(40);
   color: white;
   max-height: common.toRem(341);
 

@@ -25,6 +25,18 @@ body {
   color: colors.$text;
   height: 100%;
   background-color: white;
+
+  @include layout.md {
+    font-size: font.toRem(14);
+  }
+
+  @include layout.lg {
+    font-size: font.toRem(16);
+  }
+
+  @include layout.xl {
+    font-size: font.toRem(18);
+  }
 }
 
 img {

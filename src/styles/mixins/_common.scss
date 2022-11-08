@@ -7,6 +7,13 @@
   }
 }
 
+@mixin fromWhiteToBlueHover {
+  &:hover {
+    background: colors.$primary;
+    color: white;
+  }
+}
+
 @mixin scaleHover {
   &:hover {
     transform: scale(1.1);

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Teleweber</title>
+        <meta name="theme-color" content="#ffffff">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./styles/main.min.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="block header">
+                <div class="block__content"><a class="logo header_logo" href="/"><img src="./images/icons/sprite.svg#logo"/></a>
+                    <nav class="nav-menu header__nav-menu">
+                        <ul>
+                            <li class="nav-menu__item"><a href="#">Для кого</a></li>
+                            <li class="nav-menu__item"><a href="#">Кейсы</a></li>
+                            <li class="nav-menu__item"><a href="#">Цены</a></li>
+                            <li class="nav-menu__item"><a href="#">FAQ</a></li>
+                            <li class="nav-menu__item" hidden><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <button class="standard-btn try-free-btn try-free-btn_header">ПОПРОБОВАТЬ БЕСПЛАТНО</button>
+                    <nav class="header__contacts contacts"><a href="#" hidden>Контакты</a><a href="#"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.4082 9.16081C9.79336 6.05498 19.3503 2.26833 20.6695 1.74423C24.13 0.37248 25.1918 0.635371 24.6624 3.67323C24.2822 5.85669 23.1851 13.0856 22.3108 17.5851C21.7919 20.2534 20.6278 20.5696 18.7974 19.4153C17.9172 18.8597 13.4742 16.051 12.5099 15.3916C11.6297 14.7905 10.4156 14.0676 11.9382 12.6436C12.4799 12.1363 16.0315 8.89455 18.7986 6.37124C19.1611 6.03982 18.7057 5.4955 18.2874 5.7612C14.5578 8.12554 9.38673 11.4072 8.7286 11.8347C7.73435 12.4801 6.77948 12.7761 5.0654 12.3054C3.77029 11.9498 2.50515 11.5257 2.01273 11.3639C0.116495 10.7415 0.566608 9.93544 2.4082 9.16081Z" fill="#808080"/>
+</svg></a><a href="#"><svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.0609 0.380005H2.82101C1.70451 0.380005 0.791016 1.2935 0.791016 2.41V14.5899C0.791016 15.7064 1.70451 16.6199 2.82101 16.6199H19.0609C20.1774 16.6199 21.0909 15.7064 21.0909 14.5899V2.41C21.0909 1.2935 20.1774 0.380005 19.0609 0.380005ZM18.6549 4.69373L12.0169 8.84507C11.3571 9.26121 10.5248 9.26121 9.86507 8.84507L3.227 4.69373C2.97326 4.53134 2.82101 4.25729 2.82101 3.96294C2.82101 3.28289 3.56195 2.87689 4.1405 3.23214L10.941 7.48497L17.7414 3.23214C18.32 2.87689 19.0609 3.28289 19.0609 3.96294C19.0609 4.25729 18.9087 4.53134 18.6549 4.69373Z" fill="#808080"/>
+</svg></a></nav>
+                    <div class="last-header-btn">
+                        <button>Войти</button>
+                        <button>EN</button>
+                    </div>
+                    <div class="menu-burger"><svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.70471 0.177124C1.42309 0.177124 0.384277 1.17963 0.384277 2.41646C0.384277 3.65301 1.42309 4.65579 2.70471 4.65579H29.0014C30.283 4.65579 31.3218 3.65328 31.3218 2.41646C31.3218 1.17963 30.283 0.177124 29.0014 0.177124H2.70471ZM2.70471 8.76072C1.42309 8.76072 0.384277 9.76323 0.384277 11.0001C0.384277 12.2366 1.42309 13.2394 2.70471 13.2394H29.0014C30.283 13.2394 31.3218 12.2369 31.3218 11.0001C31.3218 9.76323 30.283 8.76072 29.0014 8.76072H2.70471ZM2.70471 17.3443C1.42309 17.3443 0.384277 18.3468 0.384277 19.5836C0.384277 20.8202 1.42309 21.823 2.70471 21.823H29.0014C30.283 21.823 31.3218 20.8205 31.3218 19.5836C31.3218 18.3468 30.283 17.3443 29.0014 17.3443H2.70471Z" fill="#0085FF"/>
+</svg>
+                    </div>
+                </div>
+            </header>
+            <div class="main-bg-wrapper"><img src="./images/content/bg.svg"></div>
+            <section class="block top-block">
+                <div class="block__content">
+                    <div class="top-block__description">
+                        <p1 class="title top-block__title">TeleWeber</p1>
+                        <p class="top-block__subtitle">Парсинговый сервис<br>для автоматического сбора информации<br>по ключевым словам в Телеграм</p>
+                        <p class="quote top-block__quote">Сервис позволяет решать задачи привлечения новых клиентов<br>и мониторинга репутации.<br>Итоговый результат формируется в удобном виде в Телеграм.</p>
+                        <button class="standard-btn try-free-btn top-block__try-free-btn">Попробовать бесплатно</button>
+                    </div>
+                    <div class="top-block__img"><img src="./images/content/site-frame.png">
+                        <div class="top-block__img-wrapper"><img src="./images/content/phone.png"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="block target-audience">
+                <div class="block__content">
+                    <p class="standard-title target-audience__title">Для кого решение?</p>
+                    <ul class="target-audience__solution-list">
+                        <li class="target-audience__solution-list-item solution-item">
+                            <details open disabled>
+                                <summary class="solution-item__top-row">
+                                    <div class="solution-item__img-wrapper"><img src="./images/icons/sprite.svg#solution1"></div>
+                                    <p class="standard-title solution-item__title">Представители товаров <br> и услуг разных сфер</p>
+                                </summary>
+                                <p class="solution-item__description">Находите клиентов,<br> заинтересованных в вашем предложении.<br> Отслеживайте, что про вас говорят.</p>
+                            </details>
+                        </li>
+                        <li class="target-audience__solution-list-item solution-item">
+                            <details open disabled>
+                                <summary class="solution-item__top-row">
+                                    <div class="solution-item__img-wrapper"><img src="./images/icons/sprite.svg#solution2"></div>
+                                    <p class="standard-title solution-item__title">Партнёрки</p>
+                                </summary>
+                                <p class="solution-item__description">Мониторьте свою репутацию <br> в affiliate чатах.<br> Привлекайте новых вебмастеров и рекламодателей.</p>
+                            </details>
+                        </li>
+                        <li class="target-audience__solution-list-item solution-item">
+                            <details open disabled>
+                                <summary class="solution-item__top-row">
+                                    <div class="solution-item__img-wrapper"><img src="./images/icons/sprite.svg#solution3"></div>
+                                    <p class="standard-title solution-item__title">Медиабаинговые агентства<br> и арбитражные команды</p>
+                                </summary>
+                                <p class="solution-item__description">Ищите офферы от партнёрок<br> и прямых рекламодателей с высоким ROI.</p>
+                            </details>
+                        </li>
+                        <li class="target-audience__solution-list-item solution-item">
+                            <details open disabled>
+                                <summary class="solution-item__top-row">
+                                    <div class="solution-item__img-wrapper"><img src="./images/icons/sprite.svg#solution4"></div>
+                                    <p class="standard-title solution-item__title">Прямые рекламодатели</p>
+                                </summary>
+                                <p class="solution-item__description">Предлагайте офферы<br> напрямую медиабаинговым агентствам,<br> арбитражным командам и партнёркам.</p>
+                            </details>
+                        </li>
+                        <li class="target-audience__solution-list-item solution-item">
+                            <details open disabled>
+                                <summary class="solution-item__top-row">
+                                    <div class="solution-item__img-wrapper"><img src="./images/icons/sprite.svg#solution5"></div>
+                                    <p class="standard-title solution-item__title">Рекламные агентства</p>
+                                </summary>
+                                <p class="solution-item__description">Мониторьте репутацию клиентов<br> и ищите исполнителей<br> в профильных чатах.</p>
+                            </details>
+                        </li>
+                        <li class="target-audience__solution-list-item solution-item">
+                            <details open disabled>
+                                <summary class="solution-item__top-row">
+                                    <div class="solution-item__img-wrapper"><img src="./images/icons/sprite.svg#solution6"></div>
+                                    <p class="standard-title solution-item__title">Платежные и карточные сервисы</p>
+                                </summary>
+                                <p class="solution-item__description">Выходите на арбитражные команды<br> и медиабаинговые агентства<br> с предложением виртуальных карт<br> и платёжных предложений.</p>
+                            </details>
+                        </li>
+                        <li class="target-audience__solution-list-item solution-item">
+                            <details open disabled>
+                                <summary class="solution-item__top-row">
+                                    <div class="solution-item__img-wrapper"><img src="./images/icons/sprite.svg#solution7"></div>
+                                    <p class="standard-title solution-item__title">Антидетект-браузеры</p>
+                                </summary>
+                                <p class="solution-item__description">Находите новых клиентов<br> в affiliate сфере. </p>
+                            </details>
+                        </li>
+                        <li class="target-audience__solution-list-item solution-item">
+                            <details open disabled>
+                                <summary class="solution-item__top-row">
+                                    <div class="solution-item__img-wrapper"><img src="./images/icons/sprite.svg#solution8"></div>
+                                    <p class="standard-title solution-item__title">HR-службы</p>
+                                </summary>
+                                <p class="solution-item__description">Рекрутируйте новых сотрудников<br> под ваши офферы.</p>
+                            </details>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="block service-description">
+                <div class="block__content">
+                    <p class="standard-title service-description__title">Ключевые возможности сервиса</p>
+                    <ul class="service-description__list">
+                        <li class="service-description__list-item">
+                            <div class="service-description__list-item-img-wrapper"><img src="./images/icons/sprite.svg#s-descr1"></div>
+                            <div class="service-description__list-item-text-block">
+                                <p>Мониторинг репутации</p>
+                                <p>Мониторьте чаты <br>по отзывам, услугам <br>и продуктам вашей компании.</p>
+                            </div>
+                        </li>
+                        <li class="service-description__list-item">
+                            <div class="service-description__list-item-img-wrapper"><img src="./images/icons/sprite.svg#s-descr2"></div>
+                            <div class="service-description__list-item-text-block">
+                                <p>Сбор целевой информации <br>по ключевым словам</p>
+                                <p>Ищите совпадения по ключевым словам <br> в чатах Телеграм <br>и собирайте информацию в удобном виде.</p>
+                            </div>
+                        </li>
+                        <li class="service-description__list-item">
+                            <div class="service-description__list-item-img-wrapper"><img src="./images/icons/sprite.svg#s-descr3"></div>
+                            <div class="service-description__list-item-text-block">
+                                <p>Удобная настройка <br>из личного кабинета</p>
+                                <p>Управляйте настройкой ключевых слов,<br>аккаунтами и чатами <br> из личного кабинета пользователя. </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="block service-description">
+                <div class="block__content">
+                    <p class="standard-title service-description__title">Выгоды от использования сервиса</p>
+                    <ul class="service-description__list">
+                        <li class="service-description__list-item">
+                            <div class="service-description__list-item-img-wrapper"><img src="./images/icons/sprite.svg#s-descr4"></div>
+                            <div class="service-description__list-item-text-block">
+                                <p hidden></p>
+                                <p>Сокращение времени работы <br>до 3 раз, благодаря собранным <br>ключевым словам и чатам</p>
+                            </div>
+                        </li>
+                        <li class="service-description__list-item">
+                            <div class="service-description__list-item-img-wrapper"><img src="./images/icons/sprite.svg#s-descr5"></div>
+                            <div class="service-description__list-item-text-block">
+                                <p hidden></p>
+                                <p>Повышение лояльности <br> за счёт быстрых ответов клиентам</p>
+                            </div>
+                        </li>
+                        <li class="service-description__list-item">
+                            <div class="service-description__list-item-img-wrapper"><img src="./images/icons/sprite.svg#s-descr6"></div>
+                            <div class="service-description__list-item-text-block">
+                                <p hidden></p>
+                                <p>Увеличение контактов <br> с потенциальными клиентами <br> на 15-20%</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="block quote-standalone">
+                <div class="block__content">
+                    <div class="quote-standalone__quote-wrapper">
+                        <p class="quote-standalone__text">Протестируйте поисковой сервис TeleWeber в действии! Бесплатный демо-доступ на сутки</p>
+                        <button class="standard-btn quote-standalone__btn">Получить</button><svg width="51" height="31" viewBox="0 0 51 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.69268 31H51L19.5 0C20.3925 17.4036 14.3152 21.7005 3.93406 28.4337C2.75837 29.1962 3.29135 31 4.69268 31Z" fill="#D9D9D9"/>
+</svg>
+                    </div>
+                </div>
+            </section>
+            <section class="block video-block">
+                <div class="block__content">
+                    <p class="standard-title video-block__title">Функционал сервиса</p>
+                    <div class="video-block__video-wrapper">
+                        <video class="video-block__video" poster="./images/content/video-poster.png">
+                            <source>
+                        </video>
+                        <button class="video-block__play-btn"><svg viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="45.462" cy="44.6456" r="44.5069" fill="#0085FF"/>
+<path d="M61.69 43.8847C62.5189 44.3552 62.5189 45.5497 61.6899 46.0202L38.2405 59.3293C37.422 59.7938 36.4067 59.2026 36.4067 58.2615L36.4067 31.6434C36.4067 30.7022 37.422 30.111 38.2405 30.5756L61.69 43.8847Z" fill="white"/>
+</svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="block cases-block">
+                <div class="block__content">
+                    <p class="standard-title cases-block__title">Кейсы</p>
+                    <div class="cases-block__slider">
+                        <div class="cases-block__slide cases-slide">
+                            <div class="cases-slide__bg-img-wrapper"><img src="./images/content/case-bg1.png"></div>
+                            <div class="cases-slide__content">
+                                <div class="cases-slide__img-wrapper"><img src="./images/content/case1.png"></div>
+                                <p class="cases-slide__title">Название</p>
+                                <p class="cases-slide__thesis"><span>Тезис</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                <p class="cases-slide__result"><span>Результат</span>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                            </div>
+                            <button class="cases-slide__btn-more"><svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 1.63525L8.65331 8.98194L1.30663 1.63525" stroke="white" stroke-width="2.07796" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                            </button>
+                        </div>
+                        <div class="cases-block__slide cases-slide">
+                            <div class="cases-slide__bg-img-wrapper"><img src="./images/content/case-bg2.png"></div>
+                            <div class="cases-slide__content">
+                                <div class="cases-slide__img-wrapper"><img src="./images/content/case2.png"></div>
+                                <p class="cases-slide__title">Название</p>
+                                <p class="cases-slide__thesis"><span>Тезис</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                <p class="cases-slide__result"><span>Результат</span>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                            </div>
+                            <button class="cases-slide__btn-more"><svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 1.63525L8.65331 8.98194L1.30663 1.63525" stroke="white" stroke-width="2.07796" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                            </button>
+                        </div>
+                        <div class="cases-block__slide cases-slide">
+                            <div class="cases-slide__bg-img-wrapper"><img src="./images/content/case-bg1.png"></div>
+                            <div class="cases-slide__content">
+                                <div class="cases-slide__img-wrapper"><img src="./images/content/case1.png"></div>
+                                <p class="cases-slide__title">Название</p>
+                                <p class="cases-slide__thesis"><span>Тезис</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                <p class="cases-slide__result"><span>Результат</span>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                            </div>
+                            <button class="cases-slide__btn-more"><svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 1.63525L8.65331 8.98194L1.30663 1.63525" stroke="white" stroke-width="2.07796" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="block tariffs-block">
+                <div class="block__content">
+                    <p class="standard-title tariffs-block__title">Выберите подходящий тариф</p>
+                    <ul class="tariffs-block__list">
+                        <li class="tariffs-block__list-item">
+                            <p>Подписка на неделю</p>
+                            <p>25$</p>
+                            <button class="standard-btn tariffs-block__list-item-btn">КУПИТЬ</button>
+                        </li>
+                        <li class="tariffs-block__list-item active">
+                            <p>Подписка на месяц</p>
+                            <p>50$</p>
+                            <button class="standard-btn tariffs-block__list-item-btn">КУПИТЬ</button>
+                        </li>
+                        <li class="tariffs-block__list-item tariffs-block__list-item_dark">
+                            <p>Подписка на полгода</p>
+                            <p>200$</p>
+                            <button class="standard-btn tariffs-block__list-item-btn">КУПИТЬ</button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="block service-description">
+                <div class="block__content">
+                    <p class="standard-title service-description__title service-description__title_center">Что входит в стоимость подписки</p>
+                    <ul class="service-description__list">
+                        <li class="service-description__list-item">
+                            <div class="service-description__list-item-img-wrapper"><img src="./images/icons/sprite.svg#s-descr7"></div>
+                            <div class="service-description__list-item-text-block">
+                                <p hidden></p>
+                                <p>Бесплатная техподдержка</p>
+                            </div>
+                        </li>
+                        <li class="service-description__list-item">
+                            <div class="service-description__list-item-img-wrapper"><img src="./images/icons/sprite.svg#s-descr8"></div>
+                            <div class="service-description__list-item-text-block">
+                                <p hidden></p>
+                                <p>Готовые ключевые слова <br> под Вашу сферу деятельности</p>
+                            </div>
+                        </li>
+                        <li class="service-description__list-item">
+                            <div class="service-description__list-item-img-wrapper"><img src="./images/icons/sprite.svg#s-descr9"></div>
+                            <div class="service-description__list-item-text-block">
+                                <p hidden></p>
+                                <p>Первичная настройка <br> и запуск парсинга на 300 чатов</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="service-description__after-text">Стоимость подписки на дополнительные 300 чатов - 5$</p>
+                </div>
+            </section>
+            <section class="block quote-standalone">
+                <div class="block__content">
+                    <div class="quote-standalone__quote-wrapper">
+                        <p class="quote-standalone__text">Протестируйте поисковой сервис TeleWeber в действии! Бесплатный демо-доступ на сутки</p>
+                        <button class="standard-btn quote-standalone__btn">Получить</button><svg width="51" height="31" viewBox="0 0 51 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.69268 31H51L19.5 0C20.3925 17.4036 14.3152 21.7005 3.93406 28.4337C2.75837 29.1962 3.29135 31 4.69268 31Z" fill="#D9D9D9"/>
+</svg>
+                    </div>
+                </div>
+            </section>
+            <section class="block faq">
+                <div class="block__content">
+                    <p class="standard-title faq__title">Часто задаваемые вопросы</p>
+                    <div class="faq__list-wrapper">
+                        <ul class="faq__list">
+                            <li class="faq__list-item">
+                                <details>
+                                    <summary>Вопрос 1</summary>
+                                    <p class="faq__list-item-description">Ответ 1</p>
+                                </details>
+                            </li>
+                            <li class="faq__list-item">
+                                <details>
+                                    <summary>Вопрос 2</summary>
+                                    <p class="faq__list-item-description">Ответ 2</p>
+                                </details>
+                            </li>
+                            <li class="faq__list-item">
+                                <details>
+                                    <summary>Вопрос 3</summary>
+                                    <p class="faq__list-item-description">Ответ 3</p>
+                                </details>
+                            </li>
+                            <li class="faq__list-item">
+                                <details>
+                                    <summary>Вопрос 4</summary>
+                                    <p class="faq__list-item-description">Ответ 4</p>
+                                </details>
+                            </li>
+                            <li class="faq__list-item">
+                                <details>
+                                    <summary>Вопрос 5</summary>
+                                    <p class="faq__list-item-description">Ответ 5</p>
+                                </details>
+                            </li>
+                            <li class="faq__list-item">
+                                <details>
+                                    <summary>Вопрос 6</summary>
+                                    <p class="faq__list-item-description">Ответ 6</p>
+                                </details>
+                            </li>
+                            <li class="faq__list-item">
+                                <details>
+                                    <summary>Вопрос 7</summary>
+                                    <p class="faq__list-item-description">Ответ 7</p>
+                                </details>
+                            </li>
+                        </ul>
+                        <button class="faq__more-btn"><img src="./images/icons/sprite.svg#arrow"></button>
+                    </div>
+                </div>
+            </section>
+            <section class="block another-questions">
+                <div class="block__content">
+                    <p class="standard-title another-questions__title">Остались вопросы?</p>
+                    <p class="another-questions__subtitle">Расскажем, чем будет полезен сервис вашему бизнесу</p>
+                    <button class="standard-btn another-questions__btn">Напишите нам в Телеграм</button>
+                </div>
+            </section>
+            <div class="popup cookie active"><svg width="58" height="42" viewBox="0 0 58 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_900_3679)">
+<path d="M56.5847 16.9912C56.2401 17.0421 55.8878 17.069 55.5291 17.069C52.2268 17.069 49.4319 14.8988 48.4732 11.9013C48.3093 11.3889 53.2787 2.60066 52.7524 2.5C47.2683 1.45104 47.2524 2.81482 47.2524 -3C47.2524 -10.9348 40.9597 -8.21868 39.2462 -8.55949C37.7982 -8.84757 36.3017 -9 34.7695 -9C22.0759 -8.99991 11.7856 1.3376 11.7856 14.0897C11.7856 26.8417 22.0759 37.1794 34.7695 37.1794C46.2096 37.1794 55.6693 28.8137 57.4484 17.823C57.5292 17.3243 57.0821 16.9179 56.5847 16.9912Z" fill="#F5B97D"/>
+<path d="M24.3893 9.62033C26.0271 9.62033 27.3547 8.28654 27.3547 6.64122C27.3547 4.9959 26.0271 3.66211 24.3893 3.66211C22.7515 3.66211 21.4238 4.9959 21.4238 6.64122C21.4238 8.28654 22.7515 9.62033 24.3893 9.62033Z" fill="#CD916E"/>
+<path d="M25.8717 23.7722C27.1001 23.7722 28.0959 22.7718 28.0959 21.5377C28.0959 20.3036 27.1001 19.3032 25.8717 19.3032C24.6433 19.3032 23.6475 20.3036 23.6475 21.5377C23.6475 22.7718 24.6433 23.7722 25.8717 23.7722Z" fill="#CD916E"/>
+<path d="M48.1147 21.5379C47.8424 21.5379 47.581 21.3874 47.4507 21.1262L46.7093 19.6365C46.5262 19.2685 46.6746 18.8212 47.041 18.6371C47.4066 18.4538 47.8519 18.6022 48.0358 18.9703L48.7772 20.4599C48.9604 20.828 48.812 21.2753 48.4456 21.4594C48.3391 21.5125 48.2262 21.5379 48.1147 21.5379Z" fill="#A06E50"/>
+<path d="M39.9592 17.0692C39.687 17.0692 39.4255 16.9186 39.2953 16.6574C39.1121 16.2893 39.2605 15.8421 39.6269 15.658L41.1097 14.9131C41.4761 14.7306 41.9206 14.8782 42.1046 15.2463C42.2877 15.6144 42.1393 16.0617 41.7729 16.2458L40.2901 16.9906C40.1836 17.0437 40.0707 17.0692 39.9592 17.0692Z" fill="#B67F5F"/>
+<path d="M19.9413 15.5796C19.6691 15.5796 19.4077 15.4291 19.2774 15.1679L18.536 13.6782C18.3528 13.3101 18.5012 12.8629 18.8676 12.6788C19.2333 12.4962 19.6785 12.6439 19.8625 13.012L20.6039 14.5016C20.7871 14.8697 20.6386 15.317 20.2722 15.501C20.1658 15.5542 20.0528 15.5796 19.9413 15.5796Z" fill="#B67F5F"/>
+<path d="M29.5798 28.9865C29.3076 28.9865 29.0461 28.8359 28.9159 28.5747C28.7327 28.2066 28.8811 27.7594 29.2475 27.5753L30.7303 26.8305C31.0967 26.6472 31.5412 26.7956 31.7252 27.1636C31.9083 27.5317 31.7599 27.979 31.3935 28.1631L29.9107 28.9079C29.8042 28.961 29.6913 28.9865 29.5798 28.9865Z" fill="#B67F5F"/>
+<path d="M29.5791 17.0689C29.3893 17.0689 29.1996 16.9962 29.0548 16.8507L28.3134 16.1059C28.0238 15.8149 28.0238 15.3436 28.3134 15.0527C28.603 14.7617 29.0722 14.7617 29.3618 15.0527L30.1032 15.7975C30.3928 16.0885 30.3928 16.5598 30.1032 16.8507C29.9584 16.9962 29.7688 17.0689 29.5791 17.0689Z" fill="#A06E50"/>
+<path d="M37.7346 32.7101C37.3247 32.7101 36.9932 32.3769 36.9932 31.9652V31.2204C36.9932 30.8087 37.3248 30.4756 37.7346 30.4756C38.1443 30.4756 38.476 30.8088 38.476 31.2204V31.9652C38.476 32.3769 38.1444 32.7101 37.7346 32.7101Z" fill="#A06E50"/>
+<path d="M33.2859 4.40679C33.0962 4.40679 32.9065 4.33409 32.7617 4.18861C32.472 3.89764 32.472 3.42629 32.7617 3.13541L33.5031 2.39059C33.7927 2.09962 34.2619 2.09962 34.5514 2.39059C34.8411 2.68155 34.8411 3.15291 34.5514 3.44378L33.81 4.18861C33.6653 4.334 33.4756 4.40679 33.2859 4.40679Z" fill="#A06E50"/>
+<path d="M17.1015 36.0151L16.9778 34.7223C16.8762 33.6597 16.0391 32.8193 14.9802 32.717L12.9774 32.5234C11.6545 32.3957 10.5134 33.4526 10.5345 34.7862L10.5783 37.5645C10.6056 39.2962 12.5018 40.3352 13.9711 39.4237L16.0537 38.1317C16.7762 37.6837 17.1826 36.8627 17.1015 36.0151Z" fill="#F5B97D"/>
+<path d="M7.75829 30.1296L8.5084 29.4619C9.09673 28.9383 9.17719 28.0461 8.692 27.4272L7.56184 25.9853C6.87761 25.1124 5.51448 25.2743 5.04868 26.2839L4.28713 27.9346C3.93007 28.7086 4.29141 29.6235 5.07925 29.9401L6.22077 30.399C6.74221 30.6084 7.33739 30.5042 7.75829 30.1296Z" fill="#F5B97D"/>
+<path d="M4.23152 34.1672C3.43982 34.3808 2.96931 35.1976 3.18061 35.9916C3.3919 36.7856 4.20498 37.2561 4.99668 37.0425C5.78838 36.8289 6.25889 36.0121 6.0476 35.2181C5.8363 34.4241 5.02322 33.9536 4.23152 34.1672Z" fill="#F5B97D"/>
+<path d="M37.5493 34.3862C24.8557 34.3862 14.5655 24.0486 14.5655 11.2965C14.5655 5.63154 16.5966 0.44312 19.9665 -3.57422C14.9636 0.661389 11.7852 7.0024 11.7852 14.0896C11.7852 26.8416 22.0754 37.1793 34.769 37.1793C41.8281 37.1793 48.1329 33.9941 52.3447 28.9723C48.3502 32.3521 43.1903 34.3862 37.5493 34.3862Z" fill="#E3AA75"/>
+<path d="M47.7297 -0.240341C46.486 -0.708899 45.7464 -1.99624 45.9648 -3.31235L46.2183 -4.84033L45.8713 -4.73571C45.059 -4.49083 44.4559 -3.80319 44.3164 -2.96276L44.1037 -1.68065C43.9289 -0.626913 44.521 0.403825 45.5167 0.778943L47.3998 1.48841C48.3985 1.86461 49.4796 1.4729 50.034 0.633369L47.7297 -0.240341Z" fill="#E3AA75"/>
+<path d="M57.104 1.33485C56.2851 1.33485 55.6212 0.667863 55.6212 -0.154797C55.6212 -0.347813 55.6581 -0.533433 55.7246 -0.702637C55.1749 -0.484638 54.7871 0.053461 54.7871 0.683196C54.7871 1.50586 55.451 2.17284 56.2699 2.17284C56.8968 2.17284 57.4323 1.78329 57.6493 1.23103C57.4808 1.29778 57.2961 1.33485 57.104 1.33485Z" fill="#E3AA75"/>
+<path d="M52.5286 8.2496L51.7127 6.33713C51.5594 5.97798 51.5467 5.59546 51.6395 5.24316L50.9259 5.6016C50.2237 5.95434 49.9169 6.79586 50.2262 7.52084L50.9466 9.20945C51.3827 10.2318 52.7398 10.4308 53.4486 9.57636L53.7366 9.22911C53.2271 9.12449 52.7612 8.79483 52.5286 8.2496Z" fill="#E3AA75"/>
+<path d="M25.9645 8.03778C24.3267 8.03778 22.9989 6.7039 22.9989 5.05849C22.9989 4.64639 23.0823 4.25396 23.2329 3.89697C22.1694 4.34975 21.4233 5.40781 21.4233 6.64122C21.4233 8.28663 22.7511 9.62051 24.389 9.62051C25.6166 9.62051 26.6699 8.871 27.1205 7.80265C26.7653 7.9539 26.3747 8.03778 25.9645 8.03778Z" fill="#B67F5F"/>
+<path d="M27.0306 22.6084C25.8022 22.6084 24.8064 21.608 24.8064 20.374C24.8064 20.0588 24.8728 19.7597 24.9901 19.4878C24.201 19.8311 23.6479 20.6188 23.6479 21.5377C23.6479 22.7718 24.6438 23.7722 25.8722 23.7722C26.7869 23.7722 27.571 23.2166 27.9127 22.4239C27.642 22.5416 27.3443 22.6084 27.0306 22.6084Z" fill="#B67F5F"/>
+<path d="M39.9591 26.7522C41.5969 26.7522 42.9246 25.4184 42.9246 23.7731C42.9246 22.1277 41.5969 20.7939 39.9591 20.7939C38.3213 20.7939 36.9937 22.1277 36.9937 23.7731C36.9937 25.4184 38.3213 26.7522 39.9591 26.7522Z" fill="#CD916E"/>
+<path d="M41.5344 25.1691C39.8965 25.1691 38.5687 23.8353 38.5687 22.1898C38.5687 21.7777 38.6521 21.3853 38.8027 21.0283C37.7392 21.4811 36.9932 22.5392 36.9932 23.7726C36.9932 25.418 38.3209 26.7519 39.9588 26.7519C41.1865 26.7519 42.2398 26.0023 42.6904 24.934C42.3352 25.0853 41.9445 25.1691 41.5344 25.1691Z" fill="#B67F5F"/>
+<path d="M33.9965 11.8553C34.8154 11.8553 35.4793 11.1883 35.4793 10.3656C35.4793 9.54291 34.8154 8.87598 33.9965 8.87598C33.1776 8.87598 32.5137 9.54291 32.5137 10.3656C32.5137 11.1883 33.1776 11.8553 33.9965 11.8553Z" fill="#CD916E"/>
+<path d="M34.7842 11.0641C33.9652 11.0641 33.3014 10.3971 33.3014 9.57441C33.3014 9.36832 33.3432 9.17215 33.4184 8.99365C32.8867 9.22004 32.5137 9.74912 32.5137 10.3658C32.5137 11.1884 33.1775 11.8554 33.9965 11.8554C34.6103 11.8554 35.137 11.4807 35.3623 10.9465C35.1846 11.0221 34.9893 11.0641 34.7842 11.0641Z" fill="#B67F5F"/>
+</g>
+<defs>
+<clipPath id="clip0_900_3679">
+<rect width="57.002" height="50.9992" fill="white" transform="translate(0.750488 -9)"/>
+</clipPath>
+</defs>
+</svg>
+                <div class="cookie__description">
+                    <p>Cookie</p>
+                    <p>Наш сайт использует файлы cookie для анализа и улучшения наших услуг.</p>
+                </div>
+                <button class="standard-btn cookie__btn">Принять</button>
+            </div>
+            <div class="popup messenger">
+                <button class="messenger__btn"><svg viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.88704 41.4833C1.6607 41.46 1.44296 41.3632 1.27103 41.1993L1.271 41.1993C0.968752 40.9109 0.866602 40.4702 1.01176 40.0782H1.01176L1.01176 40.0781M1.88704 41.4833L1.01176 40.0781M1.88704 41.4833L1.8835 41.4898H1.99392C2.13151 41.4898 2.27061 41.4629 2.40227 41.4076L2.40246 41.4075L10.8053 37.8433C14.0287 39.8421 17.7115 40.8958 21.493 40.8958C26.725 40.8958 31.6211 38.8819 35.2777 35.2257C42.9607 27.5416 42.8029 14.8868 34.9306 7.0144C31.0503 3.13373 25.9276 0.996419 20.5067 0.996419C15.2736 0.996419 10.3771 3.01032 6.72017 6.66725C3.47528 9.91187 1.48422 14.2397 1.11409 18.8533C0.763875 23.2188 1.87172 27.6367 4.2388 31.3551M1.88704 41.4833L4.2388 31.3551M1.01176 40.0781L4.2388 31.3551M1.01176 40.0781L4.2388 31.3551" fill="white" stroke="white" stroke-width="0.131185"/>
+<path d="M12.9569 21.8202C12.9569 22.7561 12.1983 23.5148 11.2624 23.5148C10.3265 23.5148 9.56787 22.7561 9.56787 21.8202C9.56787 20.8844 10.3265 20.1257 11.2624 20.1257C12.1983 20.1257 12.9569 20.8844 12.9569 21.8202Z" fill="#0085FF"/>
+<path d="M21.2951 16.118C21.2951 17.0539 20.5365 17.8125 19.6006 17.8125C18.6647 17.8125 17.9061 17.0539 17.9061 16.118C17.9061 15.1821 18.6647 14.4235 19.6006 14.4235C20.5365 14.4235 21.2951 15.1821 21.2951 16.118Z" fill="#0085FF"/>
+<path d="M26.1904 28.1142C26.1904 29.0501 25.4318 29.8088 24.4959 29.8088C23.56 29.8088 22.8014 29.0501 22.8014 28.1142C22.8014 27.1784 23.56 26.4197 24.4959 26.4197C25.4318 26.4197 26.1904 27.1784 26.1904 28.1142Z" fill="#0085FF"/>
+<path d="M31.9465 13.2131C31.9465 14.149 31.1878 14.9076 30.252 14.9076C29.3161 14.9076 28.5574 14.149 28.5574 13.2131C28.5574 12.2772 29.3161 11.5186 30.252 11.5186C31.1878 11.5186 31.9465 12.2772 31.9465 13.2131Z" fill="#0085FF"/>
+<path d="M18.444 27.6301C18.444 28.5659 17.6853 29.3246 16.7495 29.3246C15.8136 29.3246 15.0549 28.5659 15.0549 27.6301C15.0549 26.6942 15.8136 25.9355 16.7495 25.9355C17.6853 25.9355 18.444 26.6942 18.444 27.6301Z" fill="#0085FF"/>
+<path d="M11.4776 22.2506L16.884 27.657L19.8158 17.1939L24.469 27.657L30.252 12.9172M12.9569 21.8202C12.9569 22.7561 12.1983 23.5148 11.2624 23.5148C10.3265 23.5148 9.56787 22.7561 9.56787 21.8202C9.56787 20.8844 10.3265 20.1257 11.2624 20.1257C12.1983 20.1257 12.9569 20.8844 12.9569 21.8202ZM21.2951 16.118C21.2951 17.0539 20.5365 17.8125 19.6006 17.8125C18.6647 17.8125 17.9061 17.0539 17.9061 16.118C17.9061 15.1821 18.6647 14.4235 19.6006 14.4235C20.5365 14.4235 21.2951 15.1821 21.2951 16.118ZM26.1904 28.1142C26.1904 29.0501 25.4318 29.8088 24.4959 29.8088C23.56 29.8088 22.8014 29.0501 22.8014 28.1142C22.8014 27.1784 23.56 26.4197 24.4959 26.4197C25.4318 26.4197 26.1904 27.1784 26.1904 28.1142ZM31.9465 13.2131C31.9465 14.149 31.1878 14.9076 30.252 14.9076C29.3161 14.9076 28.5574 14.149 28.5574 13.2131C28.5574 12.2772 29.3161 11.5186 30.252 11.5186C31.1878 11.5186 31.9465 12.2772 31.9465 13.2131ZM18.444 27.6301C18.444 28.5659 17.6853 29.3246 16.7495 29.3246C15.8136 29.3246 15.0549 28.5659 15.0549 27.6301C15.0549 26.6942 15.8136 25.9355 16.7495 25.9355C17.6853 25.9355 18.444 26.6942 18.444 27.6301Z" stroke="#0085FF" stroke-width="1.96778"/>
+</svg>
+                </button>
+            </div>
+            <footer class="block footer">
+                <div class="block__content">
+                    <nav class="nav-menu footer__nav-menu">
+                        <ul>
+                            <li class="nav-menu__item"><a href="#">Партнёрам</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="footer__contacts contacts"><a href="#">Контакты</a><a href="#"><svg width="38" height="32" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.4082 9.16081C9.79336 6.05498 19.3503 2.26833 20.6695 1.74423C24.13 0.37248 25.1918 0.635371 24.6624 3.67323C24.2822 5.85669 23.1851 13.0856 22.3108 17.5851C21.7919 20.2534 20.6278 20.5696 18.7974 19.4153C17.9172 18.8597 13.4742 16.051 12.5099 15.3916C11.6297 14.7905 10.4156 14.0676 11.9382 12.6436C12.4799 12.1363 16.0315 8.89455 18.7986 6.37124C19.1611 6.03982 18.7057 5.4955 18.2874 5.7612C14.5578 8.12554 9.38673 11.4072 8.7286 11.8347C7.73435 12.4801 6.77948 12.7761 5.0654 12.3054C3.77029 11.9498 2.50515 11.5257 2.01273 11.3639C0.116495 10.7415 0.566608 9.93544 2.4082 9.16081Z" fill="#808080"/>
+</svg></a><a href="#"><svg width="35" height="28" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.0609 0.380005H2.82101C1.70451 0.380005 0.791016 1.2935 0.791016 2.41V14.5899C0.791016 15.7064 1.70451 16.6199 2.82101 16.6199H19.0609C20.1774 16.6199 21.0909 15.7064 21.0909 14.5899V2.41C21.0909 1.2935 20.1774 0.380005 19.0609 0.380005ZM18.6549 4.69373L12.0169 8.84507C11.3571 9.26121 10.5248 9.26121 9.86507 8.84507L3.227 4.69373C2.97326 4.53134 2.82101 4.25729 2.82101 3.96294C2.82101 3.28289 3.56195 2.87689 4.1405 3.23214L10.941 7.48497L17.7414 3.23214C18.32 2.87689 19.0609 3.28289 19.0609 3.96294C19.0609 4.25729 18.9087 4.53134 18.6549 4.69373Z" fill="#808080"/>
+</svg></a></nav>
+                </div>
+            </footer>
+            <script src="./scripts/vendor.min.js"></script>
+            <script src="./scripts/main.min.js"></script>
+        </div>
+    </body>
+</html>

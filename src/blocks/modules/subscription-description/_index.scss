@@ -1,0 +1,18 @@
+@use "../../../styles/functions/font";
+@use "../../../styles/functions/common";
+@use "../../../styles/variables/colors";
+@use "../../../styles/mixins/layout";
+@use "../../../styles/mixins/common" as mixins;
+
+.service-description__title_center{
+  text-align: center;
+}
+
+.service-description__after-text {
+  margin-top: common.toRem(47);
+  font-style: italic;
+  font-weight: 500;
+  font-size: font.toRem(18);
+  text-align: center;
+  color: colors.$alt-primary-btn;
+}

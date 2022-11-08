@@ -1,0 +1,35 @@
+@use "../../../styles/functions/font";
+@use "../../../styles/functions/common";
+@use "../../../styles/variables/colors";
+@use "../../../styles/mixins/layout";
+@use "../../../styles/mixins/common" as mixins;
+
+.video-block {
+  max-width: 100%;
+
+  .block__content {
+    max-width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 0;
+  }
+}
+
+.video-block__video-wrapper {
+  margin-top: common.toRem(40);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: black;
+  position: relative;
+}
+
+.video-block__play-btn {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  top: calc((100% - 90px) / 2);
+
+  @include mixins.scaleHover;
+}

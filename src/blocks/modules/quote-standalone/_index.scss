@@ -4,6 +4,14 @@
 @use "../../../styles/mixins/layout";
 @use "../../../styles/mixins/common" as mixins;
 
+.quote-standalone {
+  @include layout.before-md {
+    .block__content {
+      padding: 0;
+    }
+  }
+}
+
 .quote-standalone__quote-wrapper {
   display: flex;
   justify-content: space-between;
@@ -25,15 +33,43 @@
       fill: colors.$primary;
     }
   }
+
+  @include layout.before-md {
+    width: 100%;
+    padding: 25px 16px;
+    flex-flow: column;
+    align-items: center;
+    background: colors.$alt-primary-light;
+    border-radius: 0;
+    svg {
+      display: none;
+    }
+  }
 }
 
 .quote-standalone__text {
   font-weight: 600;
   font-size: font.toRem(22);
+  @include layout.before-md {
+    color: colors.$title-dark;
+    text-align: center;
+    font-size: font.toRem(12);
+  }
 }
 
 .quote-standalone__btn {
   background: #FFFFFF;
   margin-left: auto;
   @include mixins.fromWhiteToBlueHover;
+
+  @include layout.before-md {
+    margin-top: common.toRem(20);
+    margin-left: 0;
+    background: colors.$primary;
+    color: white;
+    @include mixins.blueTextHover;
+    &:hover{
+      background: white;
+    }
+  }
 }

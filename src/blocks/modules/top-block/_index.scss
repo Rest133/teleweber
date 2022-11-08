@@ -11,10 +11,20 @@
     display: flex;
     justify-content: space-between;
   }
+
+  @include layout.before-md {
+    margin-top: common.toRem(88);
+    .block__content {
+      flex-flow: column;
+    }
+  }
 }
 
 .top-block__description {
   width: common.toPercent(610);
+  @include layout.before-md {
+    width: 100%;
+  }
 }
 
 .top-block__title {
@@ -37,6 +47,10 @@
 .top-block__img {
   width: common.toPercent(609);
   position: relative;
+  @include layout.before-md {
+    width: 100%;
+    margin-top: common.toRem(55);
+  }
 }
 
 .top-block__img-wrapper {
@@ -44,4 +58,8 @@
   width: common.toRem(177);
   right: common.toRem(35);
   bottom: common.toRem(-20);
+  @include layout.before-md {
+    width: common.toRem(99);
+    right: common.toRem(5);
+  }
 }

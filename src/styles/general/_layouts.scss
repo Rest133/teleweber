@@ -4,6 +4,9 @@
 .block {
   position: relative;
   margin-top: 150px;
+  @include layout.before-md {
+    margin-top: 55px;
+  }
 }
 
 .block__content {

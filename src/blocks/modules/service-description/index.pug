@@ -35,8 +35,9 @@ section.block.service-description
                 li.service-description__list-item
                     .service-description__list-item-img-wrapper
                         img(src=`${listItem.imgSrc}`)
-                    p !{listItem.title}
-                    p !{listItem.description}
+                    .service-description__list-item-text-block
+                        p !{listItem.title}
+                        p !{listItem.description}
 
 
 section.block.service-description
@@ -47,5 +48,6 @@ section.block.service-description
                 li.service-description__list-item
                     .service-description__list-item-img-wrapper
                         img(src=`${listItem.imgSrc}`)
-                    p(hidden)
-                    p !{listItem.description}
+                    .service-description__list-item-text-block
+                        p(hidden)
+                        p !{listItem.description}

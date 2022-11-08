@@ -8,6 +8,16 @@
   display: flex;
   justify-content: space-between;
   margin-top: common.toRem(40);
+  @include layout.before-md {
+    margin-top: common.toRem(30);
+    flex-flow: column;
+  }
+}
+
+.service-description__list-item-text-block {
+  @include layout.before-md {
+    text-align: left;
+  }
 }
 
 .service-description__list-item {
@@ -27,8 +37,23 @@
     margin-top: common.toRem(15);
     color: colors.$text;
   }
+
+  @include layout.before-md {
+    flex-flow: row;
+    p:first-of-type {
+      font-size: font.toRem(14);
+    }
+
+    p:last-of-type {
+      margin-top: common.toRem(5);
+    }
+  }
 }
 
 .service-description__list-item-img-wrapper {
   width: 50px;
+  @include layout.before-md {
+    width: 30px;
+    margin-right: 10px;
+  }
 }

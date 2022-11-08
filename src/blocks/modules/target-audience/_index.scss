@@ -15,35 +15,74 @@
   justify-content: space-between;
   margin-top: common.toRem(40);
   gap: common.toRem(40);
+  @include layout.before-md {
+    display: flex;
+    flex-flow: column;
+    margin-top: common.toRem(30);
+    gap: 0;
+  }
 }
 
 .target-audience__solution-list-item {
 }
 
 .solution-item {
-  details[disabled] summary {
-    pointer-events: none;
-    user-select: none;
-  }
+  @include layout.md {
+    details[disabled] summary {
+      pointer-events: none;
+      user-select: none;
+    }
 
-  summary {
-    &::marker {
-      content: none;
+    summary {
+      &::marker {
+        content: none;
+      }
+    }
+  }
+  @include layout.before-md {
+    padding: 10px 0;
+    border-bottom: 1px solid colors.$alt-primary-light;
+    details[open] {
+      .solution-item__top-row:after{
+        transform: rotate(180deg);
+      }
     }
   }
 }
 
 .solution-item__top-row {
+  @include layout.before-md {
+    display: flex;
+    align-items: center;
+    &:after {
+      display: block;
+      margin-left: auto;
+      width: 25px;
+      height: 25px;
+      content: '';
+      background: colors.$title-dark;
+      -webkit-mask: url(../images/icons/sprite.svg#arrow) center no-repeat;
+      -webkit-mask-size: contain;
+    }
 
+  }
 }
 
 .solution-item__img-wrapper {
   width: 50px;
+  @include layout.before-md {
+    margin-right: 10px;
+    width: 30px;
+  }
 }
 
 .solution-item__title {
   margin-top: common.toRem(15);
   font-size: font.toRem(22);
+  @include layout.before-md {
+    margin-top: 0;
+    font-size: font.toRem(14);
+  }
 }
 
 .solution-item__description {
@@ -51,4 +90,7 @@
   font-weight: 500;
   font-size: font.toRem(18);
   color: colors.$text;
+  @include layout.before-md {
+    font-size: font.toRem(12);
+  }
 }

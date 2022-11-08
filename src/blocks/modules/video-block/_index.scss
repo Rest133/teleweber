@@ -23,6 +23,14 @@
   justify-content: center;
   background: black;
   position: relative;
+  @include layout.before-md {
+    margin-top: common.toRem(30);
+  }
+}
+
+.video-block__video{
+  max-width: common.toRem(786);
+  width: 100%;
 }
 
 .video-block__play-btn {
@@ -32,4 +40,10 @@
   top: calc((100% - 90px) / 2);
 
   @include mixins.scaleHover;
+
+  @include layout.before-md {
+    width: 37px;
+    height: 37px;
+    top: calc((100% - 37px) / 2);
+  }
 }

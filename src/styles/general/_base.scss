@@ -78,6 +78,12 @@ button {
   font-weight: 700;
   font-size: font.toRem(24);
   color: colors.$title-dark;
+
+  @include layout.before-md {
+    font-weight: 600;
+    font-size: font.toRem(20);
+    text-align: center;
+  }
 }
 
 .standard-btn {

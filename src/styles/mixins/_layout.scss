@@ -32,6 +32,30 @@ $breakXl: 1200px;
     }
 }
 
+@mixin before-sm() {
+    @media screen and (max-width: $breakSm - 1px){
+        @content;
+    }
+}
+
+@mixin before-md() {
+    @media screen and (max-width: $breakMd - 1px){
+        @content;
+    }
+}
+
+@mixin before-lg() {
+    @media screen and (max-width: $breakLg - 1px){
+        @content;
+    }
+}
+
+@mixin before-xl() {
+    @media screen and (max-width: $breakXl - 1px){
+        @content;
+    }
+}
+
 @mixin block(){
     width: 100%;
     margin: 0 auto;

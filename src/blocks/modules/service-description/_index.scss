@@ -1,0 +1,34 @@
+@use "../../../styles/functions/font";
+@use "../../../styles/functions/common";
+@use "../../../styles/variables/colors";
+@use "../../../styles/mixins/layout";
+@use "../../../styles/mixins/common" as mixins;
+
+.service-description__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: common.toRem(40);
+}
+
+.service-description__list-item {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+
+  p:first-of-type {
+    margin-top: common.toRem(15);
+    font-weight: 700;
+    font-size: font.toRem(22);
+    color: colors.$title-dark;
+  }
+
+  p:last-of-type {
+    margin-top: common.toRem(15);
+    color: colors.$text;
+  }
+}
+
+.service-description__list-item-img-wrapper {
+  width: 50px;
+}

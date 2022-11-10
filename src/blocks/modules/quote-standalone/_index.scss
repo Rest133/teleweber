@@ -62,16 +62,12 @@
 .quote-standalone__btn {
   background: #FFFFFF;
   margin-left: auto;
-  @include mixins.fromWhiteToBlueHover;
+  @include mixins.scaleHover;
 
   @include layout.before-md {
     margin-top: common.toRem(20);
     margin-left: 0;
     background: colors.$primary;
     color: white;
-    @include mixins.blueTextHover;
-    &:hover {
-      background: white;
-    }
   }
 }

@@ -22,24 +22,24 @@
   max-width: common.toRem(983);
   width: 100%;
 
-  &.active{
+  &.active {
     display: flex;
   }
 
-  svg{
+  svg {
     position: absolute;
     right: 0;
     top: 0;
   }
 
   @include layout.before-sm {
-    flex-flow: column;
     bottom: 0;
   }
 }
 
 .cookie__description {
   margin-right: common.toRem(50);
+
   p:first-of-type {
     font-weight: 600;
     font-size: font.toRem(24);
@@ -52,6 +52,15 @@
     font-size: font.toRem(18);
     color: colors.$alt-primary-btn;
   }
+
+  @include layout.before-sm {
+    p:first-of-type {
+      font-size: font.toRem(18);
+    }
+    p:last-of-type {
+      font-size: font.toRem(12);
+    }
+  }
 }
 
 .cookie__btn {
@@ -62,5 +71,7 @@
   @include mixins.scaleHover;
   @include layout.before-sm {
     margin-top: common.toRem(10);
+    width: auto;
+    font-size: font.toRem(10);
   }
 }

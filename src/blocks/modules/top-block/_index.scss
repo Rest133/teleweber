@@ -60,8 +60,11 @@
   width: common.toPercent(609);
   position: relative;
   @include layout.before-md {
-    width: 115%;
+    width: common.toRem(609);
     margin-top: common.toRem(55);
+  }
+  @include layout.before-sm {
+    width: 115%;
   }
 }
 

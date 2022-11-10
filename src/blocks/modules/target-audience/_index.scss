@@ -82,6 +82,7 @@
   @include layout.before-md {
     margin-top: 0;
     font-size: font.toRem(14);
+    text-align: left;
   }
 }
 

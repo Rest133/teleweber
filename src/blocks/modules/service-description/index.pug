@@ -3,7 +3,7 @@
         {
             "imgSrc": "./images/icons/sprite.svg#s-descr1",
             "title": "Мониторинг репутации",
-            "description": "Мониторьте чаты <br>по отзывам, услугам <br>и продуктам вашей компании."
+            "description": "Мониторьте чаты <br class='no-mb'>по отзывам, услугам <br>и продуктам вашей компании."
         }, {
             "imgSrc": "./images/icons/sprite.svg#s-descr2",
             "title": "Сбор целевой информации <br>по ключевым словам",
@@ -17,19 +17,19 @@
     const serviceProfitsData = [
         {
             "imgSrc": "./images/icons/sprite.svg#s-descr4",
-            "description": "Сокращение времени работы <br>до 3 раз, благодаря собранным <br>ключевым словам и чатам"
+            "description": "Сокращение времени работы <br class='no-mb'>до 3 раз, благодаря собранным <br class='no-mb'>ключевым словам и чатам"
         }, {
             "imgSrc": "./images/icons/sprite.svg#s-descr5",
             "description": "Повышение лояльности <br> за счёт быстрых ответов клиентам"
         }, {
             "imgSrc": "./images/icons/sprite.svg#s-descr6",
-            "description": "Увеличение контактов <br> с потенциальными клиентами <br> на 15-20%"
+            "description": "Увеличение контактов <br> с потенциальными клиентами <br class='no-mb'> на 15-20%"
         }
     ]
 
 section.block.service-description
     .block__content
-        p.standard-title.service-description__title Ключевые возможности сервиса
+        p.standard-title.service-description__title Ключевые <br class="no-pc"> возможности сервиса
         ul.service-description__list
             each listItem in serviceDescriptionData
                 li.service-description__list-item
@@ -42,10 +42,10 @@ section.block.service-description
 
 section.block.service-description
     .block__content
-        p.standard-title.service-description__title Выгоды от использования сервиса
+        p.standard-title.service-description__title Выгоды <br class="no-pc"> от использования сервиса
         ul.service-description__list
             each listItem in serviceProfitsData
-                li.service-description__list-item
+                li.service-description__list-item.service-description__list_1p
                     .service-description__list-item-img-wrapper
                         img(src=`${listItem.imgSrc}`)
                     .service-description__list-item-text-block

@@ -144,3 +144,9 @@ button {
   font-size: font.toRem(18);
   color: colors.$text;
 }
+
+.no-pc {
+  @include layout.sm {
+    display: none;
+  }
+}

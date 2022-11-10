@@ -4,20 +4,53 @@
 @use "../../../styles/mixins/layout";
 @use "../../../styles/mixins/common" as mixins;
 
+.service-description {
+  @include layout.before-md {
+    .block__content {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+    }
+  }
+}
+
+.service-description__title {
+  @include layout.before-sm {
+    text-align: left;
+    margin-left: common.toRem(10);
+    width: common.toRem(270);
+  }
+}
+
 .service-description__list {
   display: flex;
   justify-content: space-between;
   margin-top: common.toRem(40);
   @include layout.before-sm {
-    margin: common.toRem(30) auto 0;
+    width: 100%;
+    margin: common.toRem(10) 0 0;
     flex-flow: column;
     max-width: common.toRem(340);
+  }
+}
+
+.service-description__list_1p {
+  @include layout.before-sm {
+    .service-description__list-item-text-block p {
+      margin-top: 0;
+    }
   }
 }
 
 .service-description__list-item-text-block {
   @include layout.before-md {
     text-align: left;
+  }
+  @include layout.before-sm {
+    width: calc(100% - 40px);
+    .no-mb {
+      display: none;
+    }
   }
 }
 
@@ -41,12 +74,19 @@
 
   @include layout.before-md {
     flex-flow: row;
+    width: 100%;
     p:first-of-type {
       font-size: font.toRem(14);
     }
 
     p:last-of-type {
       margin-top: common.toRem(5);
+    }
+  }
+  @include layout.before-sm {
+    margin-top: common.toRem(20);
+    p:first-of-type {
+      margin-top: 0;
     }
   }
 }

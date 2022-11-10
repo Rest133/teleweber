@@ -4,7 +4,7 @@
 @use "../../../styles/mixins/layout";
 @use "../../../styles/mixins/common" as mixins;
 
-.service-description__title_center{
+.service-description__title_center {
   text-align: center;
 }
 
@@ -18,5 +18,9 @@
   @include layout.before-sm {
     margin-top: common.toRem(22);
     font-size: font.toRem(12);
+    font-weight: 400;
+    width: common.toRem(230);
+    margin-left: common.toRem(-25);
+    text-align: left;
   }
 }

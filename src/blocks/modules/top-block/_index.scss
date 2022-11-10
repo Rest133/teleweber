@@ -16,6 +16,7 @@
     margin-top: common.toRem(88);
     .block__content {
       flex-flow: column;
+      align-items: center;
     }
   }
 }
@@ -59,7 +60,7 @@
   width: common.toPercent(609);
   position: relative;
   @include layout.before-md {
-    width: 100%;
+    width: 115%;
     margin-top: common.toRem(55);
   }
 }

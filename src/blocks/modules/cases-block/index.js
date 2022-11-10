@@ -9,4 +9,14 @@ $('.cases-block__slider').slick({
     variableWidth: true,
     prevArrow: `<button class="cases-block__slider-arrow cases-block__slider-arrow_prev">${arrowSVG}</button>`,
     nextArrow: `<button class="cases-block__slider-arrow">${arrowSVG}</button>`,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                centerMode: true,
+                centerPadding: '4.375rem 4.375rem 4.375rem 4.375rem'
+            }
+        },
+    ]
 });

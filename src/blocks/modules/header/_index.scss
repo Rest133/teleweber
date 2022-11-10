@@ -42,7 +42,6 @@
 .header__nav-menu {
   font-weight: 600;
   font-size: font.toRem(16);
-  color: colors.$alt-primary-btn;
 
   ul {
     display: flex;
@@ -70,7 +69,12 @@
 
 .nav-menu__item {
   margin-right: common.toRem(15);
-  @include mixins.blueTextHover;
+
+  a {
+    color: colors.$alt-primary-btn;
+    text-decoration: none;
+    @include mixins.blueTextHover;
+  }
 
   @include layout.lg {
     margin-right: common.toRem(40);

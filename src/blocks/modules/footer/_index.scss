@@ -24,9 +24,11 @@
 }
 
 .footer__nav-menu {
-  color: white;
   display: flex;
   align-items: center;
+  a{
+    color: white;
+  }
 }
 
 .footer__contacts {

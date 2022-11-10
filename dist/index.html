@@ -7,8 +7,8 @@
         <meta name="theme-color" content="#ffffff">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="./styles/main.min.css">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./styles/main.css">
     </head>
     <body>
         <div class="wrapper">
@@ -16,11 +16,11 @@
                 <div class="block__content"><a class="logo header_logo" href="/"><img src="./images/icons/sprite.svg#logo"/></a>
                     <nav class="nav-menu header__nav-menu">
                         <ul>
-                            <li class="nav-menu__item"><a href="#">Для кого</a></li>
-                            <li class="nav-menu__item"><a href="#">Кейсы</a></li>
-                            <li class="nav-menu__item"><a href="#">Цены</a></li>
-                            <li class="nav-menu__item"><a href="#">FAQ</a></li>
-                            <li class="nav-menu__item" hidden><a href="#">Контакты</a></li>
+                            <li class="nav-menu__item"><a href="#for-whom">Для кого</a></li>
+                            <li class="nav-menu__item"><a href="#cases">Кейсы</a></li>
+                            <li class="nav-menu__item"><a href="#prices">Цены</a></li>
+                            <li class="nav-menu__item"><a href="#faq">FAQ</a></li>
+                            <li class="nav-menu__item" hidden><a href="#contacts">Контакты</a></li>
                         </ul>
                     </nav>
                     <button class="standard-btn try-free-btn try-free-btn_header">ПОПРОБОВАТЬ БЕСПЛАТНО</button>
@@ -39,7 +39,6 @@
                     </div>
                 </div>
             </header>
-            <div class="main-bg-wrapper"><img src="./images/content/bg.svg"></div>
             <section class="block top-block">
                 <div class="block__content">
                     <div class="top-block__description">
@@ -55,6 +54,7 @@
             </section>
             <section class="block target-audience">
                 <div class="block__content">
+                    <div class="anchor" id="for-whom"></div>
                     <p class="standard-title target-audience__title">Для кого решение?</p>
                     <ul class="target-audience__solution-list">
                         <li class="target-audience__solution-list-item solution-item">
@@ -134,13 +134,13 @@
             </section>
             <section class="block service-description">
                 <div class="block__content">
-                    <p class="standard-title service-description__title">Ключевые возможности сервиса</p>
+                    <p class="standard-title service-description__title">Ключевые <br class="no-pc"> возможности сервиса</p>
                     <ul class="service-description__list">
                         <li class="service-description__list-item">
                             <div class="service-description__list-item-img-wrapper"><img src="./images/icons/sprite.svg#s-descr1"></div>
                             <div class="service-description__list-item-text-block">
                                 <p>Мониторинг репутации</p>
-                                <p>Мониторьте чаты <br>по отзывам, услугам <br>и продуктам вашей компании.</p>
+                                <p>Мониторьте чаты <br class='no-mb'>по отзывам, услугам <br>и продуктам вашей компании.</p>
                             </div>
                         </li>
                         <li class="service-description__list-item">
@@ -162,27 +162,27 @@
             </section>
             <section class="block service-description">
                 <div class="block__content">
-                    <p class="standard-title service-description__title">Выгоды от использования сервиса</p>
+                    <p class="standard-title service-description__title">Выгоды <br class="no-pc"> от использования сервиса</p>
                     <ul class="service-description__list">
-                        <li class="service-description__list-item">
+                        <li class="service-description__list-item service-description__list_1p">
                             <div class="service-description__list-item-img-wrapper"><img src="./images/icons/sprite.svg#s-descr4"></div>
                             <div class="service-description__list-item-text-block">
                                 <p hidden></p>
-                                <p>Сокращение времени работы <br>до 3 раз, благодаря собранным <br>ключевым словам и чатам</p>
+                                <p>Сокращение времени работы <br class='no-mb'>до 3 раз, благодаря собранным <br class='no-mb'>ключевым словам и чатам</p>
                             </div>
                         </li>
-                        <li class="service-description__list-item">
+                        <li class="service-description__list-item service-description__list_1p">
                             <div class="service-description__list-item-img-wrapper"><img src="./images/icons/sprite.svg#s-descr5"></div>
                             <div class="service-description__list-item-text-block">
                                 <p hidden></p>
                                 <p>Повышение лояльности <br> за счёт быстрых ответов клиентам</p>
                             </div>
                         </li>
-                        <li class="service-description__list-item">
+                        <li class="service-description__list-item service-description__list_1p">
                             <div class="service-description__list-item-img-wrapper"><img src="./images/icons/sprite.svg#s-descr6"></div>
                             <div class="service-description__list-item-text-block">
                                 <p hidden></p>
-                                <p>Увеличение контактов <br> с потенциальными клиентами <br> на 15-20%</p>
+                                <p>Увеличение контактов <br> с потенциальными клиентами <br class='no-mb'> на 15-20%</p>
                             </div>
                         </li>
                     </ul>
@@ -215,6 +215,7 @@
             </section>
             <section class="block cases-block">
                 <div class="block__content">
+                    <div class="anchor" id="cases"></div>
                     <p class="standard-title cases-block__title">Кейсы</p>
                     <div class="cases-block__slider">
                         <div class="cases-block__slide cases-slide">
@@ -261,6 +262,7 @@
             </section>
             <section class="block tariffs-block">
                 <div class="block__content">
+                    <div class="anchor" id="prices"></div>
                     <p class="standard-title tariffs-block__title">Выберите подходящий тариф</p>
                     <ul class="tariffs-block__list">
                         <li class="tariffs-block__list-item">
@@ -284,7 +286,7 @@
             <section class="block service-description">
                 <div class="block__content">
                     <p class="standard-title service-description__title service-description__title_center">Что входит в стоимость подписки</p>
-                    <ul class="service-description__list">
+                    <ul class="service-description__list service-description__list_1p">
                         <li class="service-description__list-item">
                             <div class="service-description__list-item-img-wrapper"><img src="./images/icons/sprite.svg#s-descr7"></div>
                             <div class="service-description__list-item-text-block">
@@ -322,6 +324,7 @@
             </section>
             <section class="block faq">
                 <div class="block__content">
+                    <div class="anchor" id="faq"></div>
                     <p class="standard-title faq__title">Часто задаваемые вопросы</p>
                     <div class="faq__list-wrapper">
                         <ul class="faq__list">
@@ -374,6 +377,7 @@
             </section>
             <section class="block another-questions">
                 <div class="block__content">
+                    <div class="anchor" id="contacts"></div>
                     <p class="standard-title another-questions__title">Остались вопросы?</p>
                     <p class="another-questions__subtitle">Расскажем, чем будет полезен сервис вашему бизнесу</p>
                     <button class="standard-btn another-questions__btn">Напишите нам в Телеграм</button>
@@ -443,8 +447,8 @@
 </svg></a></nav>
                 </div>
             </footer>
-            <script src="./scripts/vendor.min.js"></script>
-            <script src="./scripts/main.min.js"></script>
+            <script src="./scripts/vendor.js"></script>
+            <script src="./scripts/main.js"></script>
         </div>
     </body>
 </html>

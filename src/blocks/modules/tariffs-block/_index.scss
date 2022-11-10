@@ -64,8 +64,8 @@
   }
 
   @include layout.before-md {
-    padding: common.toRem(20);
-    width: common.toRem(144);
+    padding: common.toRem(15);
+    width: common.toRem(116);
     height: common.toRem(152);
     white-space: unset;
     margin-right: -10px;
@@ -84,6 +84,9 @@
       padding: common.toRem(25);
       margin-right: 0;
       z-index: 5;
+      .tariffs-block__list-item-btn{
+        font-size: font.toRem(15);
+      }
     }
   }
 }
@@ -102,8 +105,9 @@
   height: common.toRem(62);
   @include mixins.scaleHover;
   @include layout.before-md {
-    width: common.toRem(84);
+    width: auto;
     height: common.toRem(38);
-    font-size: font.toRem(15);
+    font-size: font.toRem(12);
+    padding: common.toRem(10);
   }
 }

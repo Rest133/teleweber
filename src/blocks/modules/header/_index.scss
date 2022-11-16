@@ -113,23 +113,6 @@
   display: flex;
   align-items: center;
 
-  button {
-    font-weight: 600;
-    font-size: font.toRem(16);
-    color: colors.$alt-primary-btn;
-    margin-right: common.toRem(15);
-
-    &:last-of-type {
-      margin-right: 0;
-    }
-
-    @include mixins.blueTextHover;
-
-    @include layout.lg {
-      margin-right: common.toRem(40);
-    }
-  }
-
   @include layout.before-md {
     display: none;
   }
@@ -138,5 +121,22 @@
 .menu-burger {
   @include layout.md {
     display: none;
+  }
+}
+
+.header__btn {
+  font-weight: 600;
+  font-size: font.toRem(16);
+  color: colors.$alt-primary-btn;
+  margin-right: common.toRem(15);
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  @include mixins.blueTextHover;
+
+  @include layout.lg {
+    margin-right: common.toRem(40);
   }
 }

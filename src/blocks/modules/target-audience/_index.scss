@@ -8,6 +8,13 @@
 
 }
 
+.target-audience__title {
+  @include layout.before-sm {
+    text-align: left;
+    margin-left: common.toRem(40);
+  }
+}
+
 .target-audience__solution-list {
   display: grid;
   flex-flow: wrap;
@@ -43,7 +50,7 @@
     padding: 10px 0;
     border-bottom: 1px solid colors.$alt-primary-light;
     details[open] {
-      .solution-item__top-row:after{
+      .solution-item__top-row:after {
         transform: rotate(180deg);
       }
     }

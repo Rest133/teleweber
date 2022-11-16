@@ -7,7 +7,7 @@
 
 .messenger {
   position: fixed;
-  bottom: 10px;
+  bottom: 110px;
   right: common.toPercent(50);
   width: 77px;
   height: 77px;
@@ -17,6 +17,7 @@
   justify-content: center;
   align-items: center;
   filter: drop-shadow(0px 4px 10px rgba(137, 137, 137, 0.2));
+  transition: none;
 
   svg {
     width: 55%;
@@ -31,6 +32,7 @@
   z-index: 50;
 
   @include layout.before-sm {
+    bottom: 80px;
     width: 65px;
     height: 65px;
     svg {

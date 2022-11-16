@@ -74,6 +74,16 @@ button {
     background-position-y: 100px;
     background-size: 100%;
   }
+
+  @include layout.before-sm {
+    &:before{
+      width: common.toRem(867);
+      height: common.toRem(4619);
+      background: url(../images/content/bg-m.svg) center no-repeat;
+      background-position-y: -30px;
+      background-size: cover;
+    }
+  }
 }
 
 .logo {

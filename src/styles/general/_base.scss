@@ -68,11 +68,10 @@ button {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: common.toRem(2618);
-    height: common.toRem(5922);
+    width: 180%;
+    height: 100%;
     background: url(../images/content/bg.svg) center no-repeat;
     background-position-y: 100px;
-    background-size: 100%;
   }
 
   @include layout.before-sm {

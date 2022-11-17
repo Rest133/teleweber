@@ -5,6 +5,7 @@
 @use "../../../styles/mixins/common" as mixins;
 
 .footer {
+  margin-bottom: -1px;
   .block__content {
     max-width: common.toRem(1340);
     display: flex;
@@ -38,8 +39,9 @@
 
   a {
     color: white;
+    text-decoration: none;
 
-    &:hover {
+    &:hover:not([disabled]) {
       color: colors.$primary;
 
       path {

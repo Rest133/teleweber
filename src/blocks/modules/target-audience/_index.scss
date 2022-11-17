@@ -101,4 +101,7 @@
   @include layout.before-md {
     font-size: font.toRem(12);
   }
+  @include layout.before-sm {
+    margin-left: common.toRem(40);
+  }
 }

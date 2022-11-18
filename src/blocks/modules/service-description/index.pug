@@ -29,25 +29,29 @@
 
 section.block.service-description
     .block__content
-        p.standard-title.service-description__title Ключевые <br class="no-pc"> возможности сервиса
+        p.standard-title.service-description__title(data-lang-sdt1) Ключевые <br class="no-pc"> возможности сервиса
         ul.service-description__list
-            each listItem in serviceDescriptionData
+            each listItem,i in serviceDescriptionData
                 li.service-description__list-item
                     .service-description__list-item-img-wrapper
                         img(src=`${listItem.imgSrc}`)
+                    -
+                        const titleAttr ={['data-lang-sdt1-' + i] : ''}
+                        const descrAttr ={['data-lang-sdd1-' + i] : ''}
                     .service-description__list-item-text-block
-                        p !{listItem.title}
-                        p !{listItem.description}
+                        p&attributes(titleAttr) !{listItem.title}
+                        p&attributes(descrAttr) !{listItem.description}
 
 
 section.block.service-description
     .block__content
-        p.standard-title.service-description__title Выгоды <br class="no-pc"> от использования сервиса
+        p.standard-title.service-description__title(data-lang-sdt2) Выгоды <br class="no-pc"> от использования сервиса
         ul.service-description__list
-            each listItem in serviceProfitsData
+            each listItem,i in serviceProfitsData
                 li.service-description__list-item.service-description__list_1p
                     .service-description__list-item-img-wrapper
                         img(src=`${listItem.imgSrc}`)
+                    - const descrAttr ={['data-lang-sdd2-' + i] : ''}
                     .service-description__list-item-text-block
                         p(hidden)
-                        p !{listItem.description}
+                        p&attributes(descrAttr) !{listItem.description}

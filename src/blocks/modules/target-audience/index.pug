@@ -44,13 +44,16 @@
 section.block.target-audience
     .block__content
         .anchor(id='for-whom')
-        p.standard-title.target-audience__title Для кого решение?
+        p.standard-title.target-audience__title(data-lang-tat) Для кого решение?
         ul.target-audience__solution-list
-            each solution in solutionsData
+            each solution, i in solutionsData
+                -
+                    const titleAttr ={['data-lang-sct-' + i] : ''}
+                    const descrAttr = {['data-lang-scd-' + i]: ''}
                 li.target-audience__solution-list-item.solution-item
                     details(open, disabled)
                         summary.solution-item__top-row
                             .solution-item__img-wrapper
                                 img(src=`${solution.imgSrc}`)
-                            p.standard-title.solution-item__title !{solution.title}
-                        p.solution-item__description !{solution.description}
+                            p.standard-title.solution-item__title&attributes(titleAttr) !{solution.title}
+                        p.solution-item__description&attributes(descrAttr) !{solution.description}

@@ -272,6 +272,14 @@ function changeAllTexts() {
     }
 }
 
+function changeImages() {
+    const allVisibleImgs = document.querySelectorAll(`[data-lang-img="${activeLang}"]`)
+    allVisibleImgs.forEach(image => {
+        document.querySelectorAll(`[data-lang-img="${chooseLang(activeLang)}"]`).forEach(currentImg => currentImg.hidden = true)
+        image.hidden = false
+    })
+}
+
 function addChangeLangBtnHandler() {
     const allBtns = document.querySelectorAll('[data-change-lang]')
     allBtns.forEach(changeLangBtn => {
@@ -280,6 +288,7 @@ function addChangeLangBtnHandler() {
             activeLang = chooseLang(activeLang)
             allBtns.forEach(currentLangBtn => currentLangBtn.textContent = chooseLang(activeLang))
             changeAllTexts()
+            changeImages()
         }
     })
 }

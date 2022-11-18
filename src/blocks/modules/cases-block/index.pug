@@ -26,7 +26,7 @@
 section.block.cases-block
     .block__content
         .anchor(id='cases')
-        p.standard-title.cases-block__title Кейсы
+        p.standard-title.cases-block__title(data-lang-cbt) Кейсы
         .cases-block__slider
             each slide in sliderData
                 .cases-block__slide.cases-slide
@@ -35,12 +35,12 @@ section.block.cases-block
                     .cases-slide__content
                         .cases-slide__img-wrapper
                             img(src=`${slide.imgSrc}`)
-                        p.cases-slide__title #{slide.title}
+                        p.cases-slide__title(data-lang-ctmt) #{slide.title}
                         p.cases-slide__thesis
-                            span Тезис
+                            span(data-lang-ctt) Тезис
                             | #{slide.thesis}
                         p.cases-slide__result
-                            span Результат
+                            span(data-lang-ctr) Результат
                             | #{slide.result}
                     button.cases-slide__btn-more
                         <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">

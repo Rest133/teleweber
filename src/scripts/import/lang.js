@@ -150,21 +150,57 @@ const allTexts = {
         ru: 'Увеличение контактов <br> с потенциальными клиентами <br class=\'no-mb\'> на 15-20%',
         en: 'Increased contact<br>with potential customers<br>15-20%'
     },
-    qst:{
+    qst: {
         ru: 'Протестируйте поисковой сервис TeleWeber в действии! Бесплатный демо-доступ на сутки',
         en: 'Try out the TeleWeber search service in action! Free one-day demo access'
     },
-    qsbtn:{
+    qsbtn: {
         ru: 'Получить',
         en: 'Get it'
     },
-    vst:{
+    vst: {
         ru: 'Функционал сервиса',
         en: 'Functionality of the service '
+    },
+    cbt: {
+        ru: 'Кейсы',
+        en: 'Cases'
+    },
+    ctmt: {
+        ru: 'Название',
+        en: 'Title'
+    },
+    ctt: {
+        ru: 'Тезис',
+        en: 'Thesis'
+    },
+    ctr: {
+        ru: 'Результат',
+        en: 'Result'
+    },
+    tbt: {
+        ru: 'Выберите подходящий тариф',
+        en: 'Choose a suitable tariff'
+    },
+    tbtnbuy: {
+        ru: 'КУПИТЬ',
+        en: 'buy it '
+    },
+    'tct-w': {
+        ru: 'Подписка на неделю',
+        en: 'Weekly subscription'
+    },
+    'tct-m': {
+        ru: 'Подписка на месяц',
+        en: 'Monthly subscription'
+    },
+    'tct-h': {
+        ru: 'Подписка на полгода',
+        en: 'Subscription for 6 months'
     }
 }
 
 
 for (let langText in allTexts) {
-    document.querySelector(`[data-lang-${langText}]`).innerHTML = allTexts[langText][activeLang]
+    document.querySelectorAll(`[data-lang-${langText}]`).forEach(elem => elem.innerHTML = allTexts[langText][activeLang])
 }

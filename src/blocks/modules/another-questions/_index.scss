@@ -24,9 +24,9 @@
   margin: common.toRem(40) auto 0;
   background: colors.$primary-dark;
   font-weight: 600;
-  font-size: font.toRem(24);
+  font-size: font.toRem(22);
   color: white;
-  text-transform: none;
+  text-transform: uppercase;
 
   &::after {
     display: block;

@@ -140,3 +140,7 @@
     margin-right: common.toRem(40);
   }
 }
+
+[data-change-lang]{
+  text-transform: uppercase;
+}

@@ -14,7 +14,7 @@
 
 .quote-standalone__quote-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 24px 36px;
   background: colors.$primary;
@@ -61,7 +61,7 @@
 
 .quote-standalone__btn {
   background: #FFFFFF;
-  margin-left: auto;
+  margin-left: common.toRem(30);
   @include mixins.scaleHover;
 
   @include layout.before-md {

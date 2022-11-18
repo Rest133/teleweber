@@ -16,7 +16,7 @@ section.block.service-description
     .block__content
         p.standard-title.service-description__title.service-description__title_center(data-lang-sdt3) Что входит в стоимость подписки
         ul.service-description__list.service-description__list_1p
-            each listItem in subscriptionDescriptionData
+            each listItem,i in subscriptionDescriptionData
                 li.service-description__list-item
                     .service-description__list-item-img-wrapper
                         img(src=`${listItem.imgSrc}`)

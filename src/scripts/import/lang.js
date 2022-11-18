@@ -1,4 +1,5 @@
-const activeLang = 'en'
+const allLangs = ['ru', 'en']
+let activeLang = allLangs[0]
 
 const allTexts = {
     'nmenu-whom': {
@@ -246,12 +247,42 @@ const allTexts = {
         ru: 'Принять',
         en: 'Accept'
     },
-    'ftl-top':{
+    'ftl-top': {
         ru: 'Партнёрам',
         en: 'To partners'
     },
 }
 
-for (let langText in allTexts) {
-    document.querySelectorAll(`[data-lang-${langText}]`).forEach(elem => elem.innerHTML = allTexts[langText][activeLang])
+function chooseLang(currentLang) {
+    switch (currentLang) {
+        case 'ru':
+            return 'en'
+        case 'en':
+            return 'ru'
+        default:
+            return 'en'
+    }
 }
+
+function changeAllTexts() {
+    for (let langText in allTexts) {
+        const allElems = document.querySelectorAll(`[data-lang-${langText}]`)
+        if (allElems.length > 0)
+            allElems.forEach(elem => elem.innerHTML = allTexts[langText][activeLang])
+    }
+}
+
+function addChangeLangBtnHandler() {
+    const allBtns = document.querySelectorAll('[data-change-lang]')
+    allBtns.forEach(changeLangBtn => {
+        changeLangBtn.textContent = chooseLang(activeLang)
+        changeLangBtn.onclick = () => {
+            activeLang = chooseLang(activeLang)
+            allBtns.forEach(currentLangBtn => currentLangBtn.textContent = chooseLang(activeLang))
+            changeAllTexts()
+        }
+    })
+}
+
+addChangeLangBtnHandler()
+changeAllTexts()

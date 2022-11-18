@@ -14,13 +14,14 @@
 
 section.block.service-description
     .block__content
-        p.standard-title.service-description__title.service-description__title_center Что входит в стоимость подписки
+        p.standard-title.service-description__title.service-description__title_center(data-lang-sdt3) Что входит в стоимость подписки
         ul.service-description__list.service-description__list_1p
             each listItem in subscriptionDescriptionData
                 li.service-description__list-item
                     .service-description__list-item-img-wrapper
                         img(src=`${listItem.imgSrc}`)
+                    - const descrAttr ={['data-lang-sdd3-' + i] : ''}
                     .service-description__list-item-text-block
                         p(hidden)
-                        p !{listItem.description}
-        p.service-description__after-text Стоимость подписки на дополнительные 300 чатов - 5$
+                        p&attributes(descrAttr) !{listItem.description}
+        p.service-description__after-text(data-lang-sdt3ta) Стоимость подписки на дополнительные 300 чатов - 5$

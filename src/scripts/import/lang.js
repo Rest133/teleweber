@@ -17,10 +17,6 @@ const allTexts = {
         ru: 'Контакты',
         en: 'Contacts'
     },
-    htbtn: {
-        ru: 'Попробовать бесплатно',
-        en: 'Try for free'
-    },
     hlogin: {
         ru: 'Войти',
         en: 'Log in'
@@ -34,7 +30,7 @@ const allTexts = {
         en: 'The service allows you to solve the problem of attracting <br>' +
             'new customers and reputation monitoring. <br> The final result is generated in a convenient form in Telegram.'
     },
-    tbtn: {
+    'fr-btn': {
         ru: 'Попробовать бесплатно',
         en: 'Try for free'
     },
@@ -197,9 +193,64 @@ const allTexts = {
     'tct-h': {
         ru: 'Подписка на полгода',
         en: 'Subscription for 6 months'
-    }
+    },
+    sdt3: {
+        ru: 'Что входит в стоимость подписки',
+        en: 'What\'s included in the subscription price'
+    },
+    'sdd3-0': {
+        ru: 'Бесплатная техподдержка',
+        en: 'Free technical support'
+    },
+    'sdd3-1': {
+        ru: 'Готовые ключевые слова <br> под Вашу сферу деятельности',
+        en: 'Ready-made keywords <br> For your field of activity'
+    },
+    'sdd3-2': {
+        ru: 'Первичная настройка <br> и запуск парсинга на 300 чатов',
+        en: 'Initial setup <br>and start parsing for 300 chats'
+    },
+    sdt3ta: {
+        ru: 'Стоимость подписки на дополнительные 300 чатов - 5$',
+        en: ' Subscription to an additional 300 chats costs $5'
+    },
+    fqt: {
+        ru: 'Часто задаваемые вопросы',
+        en: 'Frequently Asked Questions'
+    },
+    fqq: {
+        ru: 'Вопрос',
+        en: 'Question'
+    },
+    fqa: {
+        ru: 'Ответ',
+        en: 'Answer'
+    },
+    aqt: {
+        ru: 'Остались вопросы?',
+        en: 'Any questions?'
+    },
+    aqd: {
+        ru: 'Расскажем, чем будет полезен сервис вашему бизнесу',
+        en: 'Let us tell you how the service will be useful for your business'
+    },
+    aqbtn: {
+        ru: 'Напишите нам в Телеграм',
+        en: 'contact us on Telegram'
+    },
+    cd: {
+        ru: 'Наш сайт использует файлы cookie для анализа и улучшения наших услуг.',
+        en: 'Our site uses cookies to analyze and improve our services.'
+    },
+    cbtn: {
+        ru: 'Принять',
+        en: 'Accept'
+    },
+    'ftl-top':{
+        ru: 'Партнёрам',
+        en: 'To partners'
+    },
 }
-
 
 for (let langText in allTexts) {
     document.querySelectorAll(`[data-lang-${langText}]`).forEach(elem => elem.innerHTML = allTexts[langText][activeLang])

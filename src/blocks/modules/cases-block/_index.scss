@@ -47,7 +47,12 @@
   }
 
   &:hover {
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  &:active {
     svg {
+      transition: 0.1s all linear;
       transform: translateX(30%);
     }
   }
@@ -149,17 +154,27 @@
   }
 }
 
-.cases-slide__thesis {
+.cases-slide__text-wrapper {
   margin-top: common.toRem(33);
+  max-height: common.toRem(188);
+  overflow: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
   @include layout.before-md {
     margin-top: common.toRem(11);
+    max-height: common.toRem(124);
   }
+}
+
+.cases-slide__thesis {
+
 }
 
 .cases-slide__result {
   margin-top: common.toRem(42);
-  max-height: common.toRem(90);
-  overflow: hidden;
 
   span {
     margin-bottom: common.toRem(7);
@@ -167,7 +182,6 @@
 
   @include layout.before-md {
     margin-top: common.toRem(5);
-    max-height: common.toRem(60);
   }
 }
 
@@ -204,6 +218,7 @@
       transform: translateY(10px);
     }
   }
+
   @include layout.before-md {
     height: common.toRem(25);
     svg {

@@ -1,3 +1,11 @@
-document.querySelector('.cookie__btn').onclick = () => {
-    document.querySelector('.popup.cookie').classList.remove('active')
+function cookieHandler() {
+    const cookiePopup = document.querySelector('.popup.cookie')
+    if (!cookiePopup) return
+    if (localStorage.getItem('twCookie') === 'y') cookiePopup.classList.remove('active')
+    document.querySelector('.cookie__btn').onclick = () => {
+        cookiePopup.classList.remove('active')
+        localStorage.setItem('twCookie', 'y')
+    }
 }
+
+cookieHandler()

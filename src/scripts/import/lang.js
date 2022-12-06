@@ -36,7 +36,7 @@ const allTexts = {
         en: 'Try for free'
     },
     tat: {
-        ru: 'Попробовать бесплатно',
+        ru: 'Для кого решение?',
         en: 'For whom is the solution? '
     },
     'sct-0': {
